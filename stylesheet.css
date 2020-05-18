@@ -61,16 +61,14 @@ input:active {
   font-size: 1em !important;
   border-radius: 20px !important;
 }
-.btna{
-    color: #fff;
-    margin-bottom: 1em;
-    text-decoration: none;
-
+.btna {
+  color: #fff;
+  margin-bottom: 1em;
+  text-decoration: none;
 }
-.btna:hover{
-    color: #000;
-    text-decoration: none;
-    
+.btna:hover {
+  color: #000;
+  text-decoration: none;
 }
 .btn:hover,
 .btn:active {
@@ -82,14 +80,13 @@ input:active {
   outline: 0 none !important;
 }
 
-.forgot  {
+.forgot {
   text-decoration: none !important;
-  color: #000 !important;
+  color: #000;
   text-align: center !important;
 }
 .forget :hover {
-    color: #ffd966;
-    text-decoration: none !important;
-
+  color: #ffd966 !important;
+  text-decoration: none !important;
 }
 /* popup */
