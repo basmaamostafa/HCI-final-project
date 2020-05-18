@@ -60,10 +60,17 @@ input:active {
   height: 2.5em !important;
   font-size: 1em !important;
   border-radius: 20px !important;
-  border-color: rgba(255, 217, 102, 0.6) !important;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
-    0 0 8px rgba(255, 217, 102, 0.3) !important;
-  outline: 0 none !important;
+}
+.btna{
+    color: #fff;
+    margin-bottom: 1em;
+    text-decoration: none;
+
+}
+.btna:hover{
+    color: #000;
+    text-decoration: none;
+    
 }
 .btn:hover,
 .btn:active {
@@ -81,4 +88,7 @@ input:active {
   text-align: center !important;
 }
 .forget:hover {
+    color: #ffd966;
+    text-decoration: none !important;
+
 }
