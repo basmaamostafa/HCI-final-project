@@ -148,4 +148,9 @@ input:checked[type="checkbox"]:before{
   color: #ffd966 !important;
   text-decoration: none !important;
 }
-/* popup */
+/* forget pass */
+.backbtn{
+  background: transparent;
+  border: none;
+  margin: 1em;
+}
