@@ -42,10 +42,10 @@ i:hover {
 }
 
 /* signin/up */
-form{
+/* form{
     margin: 1em 2em;
 padding-bottom: 2em;
-}
+} */
 input:focus , input:active {   
     border-color: rgba(255, 217, 102, 0.6)!important;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 217, 102, 0.3)!important;
