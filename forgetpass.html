@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
+    <title>Forget Password</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./stylesheet.css" />
 
@@ -21,14 +21,14 @@
       <!-- NavBar -->
       <nav class="fixed-bottom">
         <ul class="nav nav-pills nav-fill">
-          <li class="nav-item">
-            <a class="nav-link " href="./home.html">
-              <i class="fas fa-home fa-2x"></i>
+          <li class="nav-item ">
+            <a class="nav-link  " href="./home.html">
+              <i class="fas fa-home fa-2x "></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <i class="fas fa-briefcase fa-2x"></i>
+              <i class="fas fa-briefcase  fa-2x"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -49,59 +49,43 @@
         </ul>
       </nav>
 
-      <!-- signin -->
-      <div class="container-fluid">
-     <h2 class="title">Sign In</h2>
-          <form class="signform">
-            <button type="submit" class="btn btn-primary btn-lg btn-block" formaction="https://accounts.google.com/AccountChooser?service=lso"
-            >
-              Sign In with Google
-            </button>
-            <div class="row hrline">
-              <div class="col-sm-6">
-                <div class="input-group input-group-sm">
-                  <hr class="line">
-                  <p>Or</p>
-                  <hr class="line">                  
-            </div>
-              </div>
-                </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="input-group input-group-sm">
-                  <input type="checkbox" name="">
-                  <label for="" class="">keep me signed in</label>
-            </div>
-              </div>
-                </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">
-              Sign In
-            </button>
-            <div class="signq">
-              <a class="optionin" href="./forgetpass.html"><p> Forgot your password?</p></a><br>
-              <a class="optionin" href="./signup.html"><p> Dont have an account? Sign Up</p></a>
-            </div>
-          </form>
-      
-    </div>
 
+      <div class="container-fluid">
+        <h2 class="title">Forget Password</h2>
+             <form class="signform">
+               <div class="form-group">
+                 <label for="exampleInputEmail1">Email address</label>
+                 <input
+                   type="email"
+                   class="form-control"
+                   id="exampleInputEmail1"
+                   aria-describedby="emailHelp"
+                 />
+               </div>
+               <div class="row hrline">
+                <div class="col-sm-6">
+                  <div class="input-group input-group-sm">
+                    <hr class="line">
+                    <p>Or</p>
+                    <hr class="line">                  
+              </div>
+                </div>
+                  </div>
+               <div class="form-group">
+                 <label for="exampleInputphone1">Phone Number</label>
+                 <input
+                   type="password"
+                   class="form-control"
+                   id="exampleInputPassword1"
+                 />
+               </div>
+               <button type="submit" class="btn btn-primary btn-lg btn-block">
+                 Reset Password
+               </button>
+             </form>
+         
+       </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
