@@ -45,7 +45,7 @@ input:focus , input:active {
 .forgot a{
     text-decoration: none!important;
     color: #000!important;
-    
+    text-align: center!important;
 }
 .forgot a:hover , .forgot a:active{
     color: #FFD966!important;
