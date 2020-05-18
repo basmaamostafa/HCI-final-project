@@ -1,0 +1,53 @@
+/* NavBar */
+nav{
+    margin-top: 2em;
+    background-color: #fff;
+}
+.nav-link{
+    background-color: #fff!important;
+}
+.active{
+    /* background-color: #000!important; */
+}
+.activei{
+    color: #FFD966;
+}
+i{
+    color: #000;
+}
+i:hover{
+    color: #FFD966;
+}
+
+/* signin/up */
+form{
+    margin: 1em 2em;
+padding-bottom: 2em;
+}
+input:focus , input:active {   
+    border-color: rgba(255, 217, 102, 0.6)!important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 217, 102, 0.3)!important;
+    outline: 0 none !important;
+  }
+.btn{
+    background-color: #000!important;
+    border: none!important;
+    color: #fff!important;
+    height: 2.5em!important;
+    font-size: 1em!important;
+
+}
+.btn:hover , .btn:active{
+    background-color: #FFD966!important;
+    border: none!important;
+    color: #000!important;
+}
+.forgot a{
+    text-decoration: none!important;
+    color: #000!important;
+}
+.forgot a:hover , .forgot a:active{
+    color: #FFD966!important;
+
+}
+/* signform animation */
