@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life Labour</title>
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./reset.css"/>
     <link rel="stylesheet" href="./stylesheet.css"/>
 
     <link
@@ -20,9 +20,9 @@
       <!-- NavBar -->
       <nav class="fixed-bottom">
         <ul class="nav nav-pills nav-fill">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              <i class="fas fa-home activei"></i>
+          <li class="nav-item disabled">
+            <a class="nav-link active disabled" href="#">
+              <i class="fas fa-home activei "></i>
             </a>
           </li>
           <li class="nav-item">
@@ -48,87 +48,19 @@
         </ul>
       </nav>
 
-      <!-- signup -->
+    <main>
+        <h1 class="welcome">Welcome To Life Labor</h1>
+      <form action="" class="hsign">
+        <button type="submit" class="btn btn-primary btn-lg btn-block homesign">
+          Sign In
+        </button>
+        <button type="submit" class="btn btn-primary btn-lg btn-block homesign">
+          Sign In
+        </button>
+      </form>
+    </main>
 
-      <div class="signform">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputName">Full Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="exampleInputName"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Confirm Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-block">
-            Sign Up
-          </button>
-        </form>
-
-        <!-- signin -->
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="form-group form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Keep Me Signed In</label
-            >
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-block">
-            Sign In
-          </button>
-          <div class="forgot">
-            <a href="#">Forgot your password?</a>
-          </div>
-        </form>
-      </div>
-    </div>
+  </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
