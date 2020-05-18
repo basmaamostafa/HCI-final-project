@@ -82,12 +82,12 @@ input:active {
   outline: 0 none !important;
 }
 
-.forgot a {
+.forgot  {
   text-decoration: none !important;
   color: #000 !important;
   text-align: center !important;
 }
-.forget:hover {
+.forget :hover {
     color: #ffd966;
     text-decoration: none !important;
 
