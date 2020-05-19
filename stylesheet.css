@@ -167,11 +167,11 @@ input:checked[type="checkbox"]:before{
 .homelogo{
   width: 12em;
   margin: 1em -.8em 0em;
-  padding-left: 1em;
+  /* padding-left: 1em; */
 }
 .fa-sign-out-alt{
   margin-top: 2em;
-  padding-left: 10em;
+  /* padding-left: 8em; */
 }
 .card-img{
   height: 10em!important;
