@@ -161,18 +161,43 @@ input:checked[type="checkbox"]:before{
   margin-bottom: 0;
 }
 /* home page */
-.pagetit .subtit{
-  margin: 0em 1em ;
+.pagetit {
+  margin-bottom: 0em;
 }
 .homelogo{
-  width: 12em;
-  margin: 1em -.8em 0em;
+  width: 14em;
+  /* margin: 0em -.8em 0em; */
   /* padding-left: 1em; */
 }
-.fa-sign-out-alt{
-  margin-top: 2em;
-  /* padding-left: 8em; */
+.logo-exit{
+display: flex;
+justify-content: space-between;
 }
+.fa-sign-out-alt{
+  margin-top: .7em;
+margin-right: 1em;
+}
+
 .card-img{
   height: 10em!important;
+}
+.search{
+  background-color: #fff !important;
+  border: solid 1px #000 !important;
+  color: #fff !important;
+  height: 2.5em !important;
+  font-size: 1em !important;
+  border-radius: 20px !important;
+  margin-bottom: 1.5em;
+}
+.search p{
+  color: #000;
+  margin-left: .5em;
+}
+.searchbtn{
+  display: flex;
+  justify-content: space-between;
+}
+.fa-search{
+  margin-right: .5em;
 }
