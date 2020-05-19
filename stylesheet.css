@@ -160,3 +160,11 @@ input:checked[type="checkbox"]:before{
   margin: 1em;
   margin-bottom: 0;
 }
+/* home page */
+.titlep {
+  margin: 1em 1em ;
+  text-align: center;
+}
+.card-img{
+  height: 10em!important;
+}
