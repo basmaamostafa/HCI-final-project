@@ -161,9 +161,17 @@ input:checked[type="checkbox"]:before{
   margin-bottom: 0;
 }
 /* home page */
-.titlep {
-  margin: 1em 1em ;
-  text-align: center;
+.pagetit .subtit{
+  margin: 0em 1em ;
+}
+.homelogo{
+  width: 12em;
+  margin: 1em -.8em 0em;
+  padding-left: 1em;
+}
+.fa-sign-out-alt{
+  margin-top: 2em;
+  padding-left: 10em;
 }
 .card-img{
   height: 10em!important;
