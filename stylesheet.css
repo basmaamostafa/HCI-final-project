@@ -177,10 +177,6 @@ justify-content: space-between;
   margin-top: .7em;
 margin-right: 1em;
 }
-
-.card-img{
-  height: 10em!important;
-}
 .search{
   background-color: #fff !important;
   border: solid 1px #000 !important;
@@ -188,7 +184,7 @@ margin-right: 1em;
   height: 2.5em !important;
   font-size: 1em !important;
   border-radius: 20px !important;
-  margin-bottom: 1.5em;
+  margin-bottom: .5em;
 }
 .search p{
   color: #000;
@@ -203,4 +199,64 @@ margin-right: 1em;
 }
 .searchform{
   margin-top: 1em;
+}
+.searchbtnp{
+  margin-top:-.2em;
+}
+.searchpage{
+  margin: 1em .5em .5em 1em;
+  background-color: #fff!important;
+  color: #000!important;
+  border: #000 solid 1px!important;
+  width: 7em!important;
+}
+.searchpage:hover
+{
+  border: #ffd966 solid 1px;
+  background-color: #fff!important;
+}
+.searchpage:active{
+  background-color: #ffd966!important;
+  color: #000!important;
+}
+.cardtitle{
+  font-size: 30px;
+}
+.cardsub{
+  font-size: 22px;
+  margin-top: -.5em;
+}
+.cardlg{
+  margin: 1em 0.5em;
+  padding: 1em;
+}
+.cardlg:hover{
+  border: #000 solid 1px;
+  border-radius: 20px;
+}
+.cardimg{
+  width: 4.5em;
+}
+.cardtit{
+  font-size: 23px;
+}
+.crdsub{
+  font-size: 20px;
+}
+.crdtxt{
+  margin-top: .7em;
+  padding-left: 1em;
+}
+.cardsm{
+  padding: 1em 1em 0em 1em;
+  padding-bottom: -1em!important; 
+}
+.cardsm:hover {
+  border: #000 solid 1px;
+  border-radius: 20px; 
+  padding: 1em 1em 0em 1em;
+  padding-bottom: -1em!important; 
+}
+.lastcrd{
+  margin-bottom: 3em;
 }
