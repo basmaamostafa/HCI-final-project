@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <div id="container">
+<div id="container">
       <!-- NavBar -->
       <nav class="fixed-bottom">
         <ul class="nav nav-pills nav-fill">
@@ -28,7 +28,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <i class="fas fa-briefcase fa-2x"></i>
+              <i class="fas fa-briefcase  fa-2x"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -48,64 +48,35 @@
           </li>
         </ul>
       </nav>
+      <button class="backbtn"       
+      action="action"
+      onclick="window.history.go(-1); return false;"
+      type="submit"
+      value="Cancel">
+      <i class="fas fa-chevron-left fa-lg"></i>
+    </button>
       <div class="container-fluid">
-        <div class="">
-          <div class="row logo-exit">
-            <div class="homelogo"> 
-            <img class=" img-fluid rounded d-block" src="./logo.jpg" alt="">
-          </div> 
-            <div class="exit">
-              <i class=" fas fa-sign-out-alt fa-2x"></i>
-            </div>
-            </div>
-          <h2 class="pagetit">Home</h2>
-          <p class="subtit">Welcome, username</p>
-        </div>
-        <div class="search ">
-          <form action=""><button
-          type="submit"
-          class=" btn-primary btn-lg btn-block search"
-          formaction="./search.html">
-          <div class="row searchbtn"></form>
+        <h2 class="pagetit">Search</h2>
+        
+        <div class=" ">
+          <form class="searchform">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Search"
+              />
+              <!-- <i class="fas fa-search"></i> -->
           <div>
-            <p>Search</p>
-          </div>
-          <div>
-            <i class="fas fa-search"></i>
-          </div>
         </div>
-        </button>
-        </div>
+        
 
 
-        <div class="card bg-dark text-white">
-          <img src="./hcourses.jpg" class="card-img img-fluid" alt="..." />
-          <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p class="card-text">Last updated 3 mins ago</p>
-          </div>
-        </div>
+
       </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row w-100">
-      <div class="col-sm">
-        <div class="media">
-          <div class="media-body">
-            <h5 class="mt-2 mb-2">Courses</h5>
-            Discounts up to 60%
-          </div>
-          <img src="./course.png" class="ml-3 mb-3 mt-1" alt="..." />
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
