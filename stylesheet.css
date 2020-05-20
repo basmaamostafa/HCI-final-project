@@ -265,3 +265,12 @@ input:checked[type="checkbox"]:before {
 .lastcrd {
   margin-bottom: 3em;
 }
+.iconbar i {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5em;
+}
+.btnview {
+  background-color: #fff !important;
+  color: #000;
+}

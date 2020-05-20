@@ -17,9 +17,9 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-<div id="container">
+    <div id="container">
       <!-- NavBar -->
-      <!-- <nav class="fixed-bottom">
+      <nav class="fixed-bottom">
         <ul class="nav nav-pills nav-fill">
           <li class="nav-item disabled">
             <a class="nav-link active disabled" href="./index.html">
@@ -28,7 +28,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <i class="fas fa-briefcase  fa-2x"></i>
+              <i class="fas fa-briefcase fa-2x"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -38,7 +38,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <i class="fas fa-bell fa-2x"></i>
+              <i class="far fa-bell fa-2x"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -47,78 +47,68 @@
             </a>
           </li>
         </ul>
-      </nav> -->
-      <button class="backbtn"       
-      action="action"
-      onclick="window.history.go(-1); return false;"
-      type="submit"
-      value="Cancel">
-      <i class="fas fa-chevron-left fa-lg"></i>
-    </button>
+      </nav>
       <div class="container-fluid">
-        <h2 class="pagetit">Search</h2>
-        
-        <div class=" ">
-          <form class="searchform">
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Search"
-              />
-              <!-- <i class="fas fa-search"></i> -->
+        <div class="fixed-top row iconbar">
           <div>
+            <button
+              class="backbtn fixed-top"
+              action="action"
+              onclick="window.history.go(-1); return false;"
+              type="submit"
+              value="Cancel"
+            >
+              <i class="fas fa-chevron-left fa-lg"></i>
+            </button>
+          </div>
+          <div>
+            <button
+              class="backbtn fixed-top"
+              action="action"
+              onclick="window.history.go(-1); return false;"
+              type="submit"
+              value="Cancel"
+            >
+              <i class="far fa-bell fa-lg"></i>
+            </button>
+          </div>
+          <div>
+            <button
+              class="backbtn fixed-top"
+              action="action"
+              onclick="window.history.go(-1); return false;"
+              type="submit"
+              value="Cancel"
+            >
+              <i class="fas fa-share fa-lg"></i>
+            </button>
+          </div>
         </div>
-        <form action="" class="hsign">
-          <div class="row">
+        <form action="" class="btnview">
           <button
             type="submit"
-            class="btn btna btn-primary btn-lg searchpage"
-            formaction="./marketingSearch.html">Marketing
+            class="btn active btna btn-primary btn-lg btn-block homesign"
+            formaction="./signin.html"
+          >
+            Overview
           </button>
           <button
             type="submit"
-            class="btn btna btn-primary btn-lg searchpage "
-            formaction="#">IT
+            class="btn btna btn-primary btn-lg btn-block homesign"
+            formaction="./signup.html"
+          >
+            Jobs
           </button>
           <button
-          type="submit"
-          class="btn btna btn-primary btn-lg searchpage"
-          formaction="#">ICT
-        </button>
-        <button
-          type="submit"
-          class="btn btna btn-primary btn-lg searchpage"
-          formaction="#">Design
-        </button>
-        <button
-        type="submit"
-        class="btn btna btn-primary btn-lg searchpage"
-        formaction="#">Training
-      </button>
-      <button
-        type="submit"
-        class="btn btna btn-primary btn-lg searchpage"
-        formaction="#">Legal 
-      </button>
-      <button
-      type="submit"
-      class="btn btna btn-primary btn-lg searchpage"
-      formaction="#">Engineering
-    </button>
-    <button
-      type="submit"
-      class="btn btna btn-primary btn-lg searchpage"
-      formaction="#">Financial 
-    </button>
-        </div>
+            type="submit"
+            class="btn btna btn-primary btn-lg btn-block homesign"
+            formaction="./signup.html"
+          >
+            Review
+          </button>
         </form>
-
-
       </div>
-</div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
