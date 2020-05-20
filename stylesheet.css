@@ -166,6 +166,7 @@ input:checked[type="checkbox"]:before{
 }
 .homelogo{
   width: 14em;
+  margin-top: 1em;
   /* margin: 0em -.8em 0em; */
   /* padding-left: 1em; */
 }
