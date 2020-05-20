@@ -155,14 +155,21 @@ input:checked[type="checkbox"]:before{
 }
 /* forget pass */
 .backbtn{
-  background: transparent;
+  background: #fff;
   border: none;
   margin: 1em;
   margin-bottom: 0;
 }
 /* home page */
 .pagetit {
-  margin-bottom: 0em;
+  margin-bottom: 1em;
+}
+.sectit{
+  margin: .5em ;
+  font-size: 27px;
+}
+.tits{
+  margin-top: 2em;
 }
 .homelogo{
   width: 14em;
@@ -245,18 +252,17 @@ margin-right: 1em;
   font-size: 20px;
 }
 .crdtxt{
-  margin-top: .7em;
+  margin-top: .5em;
   padding-left: 1em;
 }
 .cardsm{
-  padding: 1em 1em 0em 1em;
-  padding-bottom: -1em!important; 
+  padding: .5em 1em .5em 1em;
 }
 .cardsm:hover {
-  border: #000 solid 1px;
+  border: #ffd966 solid 1px;
   border-radius: 20px; 
-  padding: 1em 1em 0em 1em;
-  padding-bottom: -1em!important; 
+  padding: .5em 1em .5em 1em;
+
 }
 .lastcrd{
   margin-bottom: 3em;
