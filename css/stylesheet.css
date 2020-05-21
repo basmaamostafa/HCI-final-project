@@ -11,7 +11,7 @@ body::-webkit-scrollbar-thumb {
 
 /* NavBar */
 nav {
-  margin-top: 2em;
+  margin-top: em;
   background-color: #fff;
 }
 .nav-link {
@@ -155,10 +155,13 @@ input:checked[type="checkbox"]:before {
 }
 /* forget pass */
 .backbtn {
+  width: 100%;
   background: #fff;
   border: none;
-  margin: 1em;
-  margin-bottom: 0;
+}
+.backbtn i {
+  float: left;
+  margin: 0.8em;
 }
 /* home page */
 .pagetit {
@@ -249,17 +252,19 @@ input:checked[type="checkbox"]:before {
   font-size: 23px;
   color: #000;
   text-decoration: none;
+  margin-bottom: 0em;
 }
 .crdsub {
-  font-size: 20px;
+  /* font-size: 20px; */
+  margin-bottom: 0em !important;
 }
 .crdtxt {
   margin-top: 0.5em;
   padding-left: 1em;
 }
 .cardsm {
-  padding: 0.5em 1em 0.5em 1em;
-  margin: 0 1em !important;
+  padding: 0.5em 0em 0.5em 1em !important;
+  margin: 0 0.5em !important;
 }
 .carda {
   text-decoration: none;
@@ -272,6 +277,9 @@ input:checked[type="checkbox"]:before {
 .cardsm:hover {
   border: #ffd966 solid 1px;
   border-radius: 20px;
+}
+.cardst {
+  margin-top: 3em !important;
 }
 .ccard {
   padding: 1em 1em 0.5em 1em !important;
@@ -301,4 +309,6 @@ input:checked[type="checkbox"]:before {
 #card:hover {
   border: #ffd966 solid 1px !important;
   border-radius: 20px;
+}
+.btnpage {
 }
