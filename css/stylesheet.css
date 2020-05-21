@@ -16,6 +16,7 @@ nav {
 }
 .nav-link {
   background-color: #fff !important;
+  margin-top: 0.5em;
 }
 .active {
   /* background-color: #000!important; */
@@ -293,7 +294,7 @@ input:checked[type="checkbox"]:before {
   border-radius: 20px;
 }
 .lastcrd {
-  margin-bottom: 3em !important;
+  margin-bottom: 4em !important;
 }
 .iconbar i {
   display: flex;
@@ -330,5 +331,10 @@ input:checked[type="checkbox"]:before {
   margin: 0.5em 1.2em;
 }
 .jobtxt {
-  margin: 0.5em 1.5em;
+  margin: 1em 1.5em;
+}
+.alppybtn {
+  background-color: #fff !important;
+  color: #000 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.3);
 }
