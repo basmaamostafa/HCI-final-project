@@ -222,7 +222,8 @@ input:checked[type="checkbox"]:before {
   width: 7em !important;
 }
 .searchpage:hover {
-  border: #ffd966 solid 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(255, 217, 102, 0.3) !important;
   background-color: #fff !important;
 }
 .searchpage:active {
@@ -275,7 +276,8 @@ input:checked[type="checkbox"]:before {
   color: #000;
 }
 .cardsm:hover {
-  border: #ffd966 solid 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(255, 217, 102, 0.3) !important;
   border-radius: 20px;
 }
 .cardst {
@@ -291,7 +293,7 @@ input:checked[type="checkbox"]:before {
   border-radius: 20px;
 }
 .lastcrd {
-  margin-bottom: 3em;
+  margin-bottom: 3em !important;
 }
 .iconbar i {
   display: flex;
@@ -307,8 +309,26 @@ input:checked[type="checkbox"]:before {
   border: none !important;
 }
 #card:hover {
-  border: #ffd966 solid 1px !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(255, 217, 102, 0.3) !important;
   border-radius: 20px;
 }
 .btnpage {
+  margin-top: 0.5em;
+  width: 50%;
+  border-radius: 12px !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.btnpageactive {
+  background-color: #ffd966 !important;
+  box-shadow: none;
+  color: #000 !important;
+}
+.jobtit {
+  margin: 0.5em 1.2em;
+}
+.jobtxt {
+  margin: 0.5 1.5em;
 }
