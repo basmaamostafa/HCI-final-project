@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Life Labour</title>
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./stylesheet.css" />
+    <title>Forget Password</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
 
     <link
       rel="stylesheet"
@@ -19,16 +19,16 @@
   <body>
     <div id="container">
       <!-- NavBar -->
-      <nav class="fixed-bottom">
+      <!-- <nav class="fixed-bottom">
         <ul class="nav nav-pills nav-fill">
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.html">
-              <i class="fas fa-home fa-2x"></i>
+          <li class="nav-item ">
+            <a class="nav-link  " href="./home.html">
+              <i class="fas fa-home fa-2x "></i>
             </a>
           </li>
-          <li class="nav-item disabled">
-            <a class="nav-link disabled" href="/jobs.html">
-              <i class="fas fa-briefcase fa-2x activei"></i>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-briefcase  fa-2x"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -47,11 +47,49 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
+      <button
+        class="backbtn fixed-top"
+        action="action"
+        onclick="window.history.go(-1); return false;"
+        type="submit"
+        value="Cancel"
+      >
+        <i class="fas fa-chevron-left fa-lg"></i>
+      </button>
       <div class="container-fluid">
-        <h2 class="pagetit">Jobs</h2>
-        <h5 class="mt-4 mb-4 cardtitle">Blogs</h5>
-        <p class="cardsub">The latest news, trends and cources.</p>
+        <h2 class="title tits">Forget Password</h2>
+        <form class="signform">
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter your account email"
+            />
+          </div>
+          <div class="row hrline">
+            <div class="col-sm-6">
+              <div class="input-group input-group-sm">
+                <hr class="line" />
+                <p>Or</p>
+                <hr class="line" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            Reset Password
+          </button>
+        </form>
       </div>
     </div>
     <script
