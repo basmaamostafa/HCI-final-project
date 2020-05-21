@@ -247,6 +247,8 @@ input:checked[type="checkbox"]:before {
 }
 .cardtit {
   font-size: 23px;
+  color: #000;
+  text-decoration: none;
 }
 .crdsub {
   font-size: 20px;
@@ -258,6 +260,14 @@ input:checked[type="checkbox"]:before {
 .cardsm {
   padding: 0.5em 1em 0.5em 1em;
   margin: 0 1em !important;
+}
+.carda {
+  text-decoration: none;
+  color: #000;
+}
+.carda:hover {
+  text-decoration: none;
+  color: #000;
 }
 .cardsm:hover {
   border: #ffd966 solid 1px;
