@@ -294,11 +294,11 @@ input:checked[type="checkbox"]:before {
   background-color: #fff !important;
   color: #000;
 }
-/* .carousel {
+#card {
   margin-bottom: 1em;
-  border: none;
+  border: none !important;
 }
-.carousel:hover {
-  border: #ffd966 solid 1px;
+#card:hover {
+  border: #ffd966 solid 1px !important;
   border-radius: 20px;
-} */
+}
