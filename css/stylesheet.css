@@ -344,7 +344,7 @@ input:checked[type="checkbox"]:before {
   bottom: auto;
   color: #000 !important;
   transition: 0.5s ease;
-  opacity: 0 !important;
+  opacity: 1 !important;
   /* transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); */
 }
@@ -353,13 +353,26 @@ input:checked[type="checkbox"]:before {
   max-height: 150px !important;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  opacity: 1 !important;
+}
+.carousel-inner img {
+  opacity: 0.5;
+  filter: grayscale(0%);
 }
 .carousel-inner:hover img {
   opacity: 0.2;
+  filter: grayscale(70%);
 }
 .carousel-inner:hover .carousel-caption {
   opacity: 1 !important;
 }
 .fa-star {
   color: #ffd966;
+}
+.lineout {
+  border: 0.5px solid #000;
+  margin-top: 0.5em;
+}
+.credit {
+  opacity: 0.5;
 }
