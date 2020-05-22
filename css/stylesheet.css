@@ -338,3 +338,18 @@ input:checked[type="checkbox"]:before {
   color: #000 !important;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.3);
 }
+.carousel-caption {
+  top: 1em;
+  bottom: auto;
+  color: #000 !important;
+}
+.cimg {
+  opacity: 1 !important;
+  filter: grayscale(20%) !important;
+  /* transition-duration: 4s; */
+}
+.cimg:hover .cimg:active {
+  opacity: 0.2 !important;
+  filter: grayscale(70%) !important;
+  /* transition-duration: 4s; */
+}
