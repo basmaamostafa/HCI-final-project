@@ -340,4 +340,18 @@ input:checked[type="checkbox"]:before {
 }
 .checked {
   color: orange;
+.carousel-caption {
+  top: 1em;
+  bottom: auto;
+  color: #000 !important;
+}
+.cimg {
+  opacity: 1 !important;
+  filter: grayscale(20%) !important;
+  /* transition-duration: 4s; */
+}
+.cimg:hover .cimg:active {
+  opacity: 0.2 !important;
+  filter: grayscale(70%) !important;
+  /* transition-duration: 4s; */
 }
