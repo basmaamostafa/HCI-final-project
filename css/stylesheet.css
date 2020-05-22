@@ -40,7 +40,7 @@ i:hover {
   text-align: center;
 }
 .signp {
-  font-size: larger;
+  /* font-size: larger; */
   text-align: center;
   margin: 1em 3em;
 }
@@ -170,7 +170,7 @@ input:checked[type="checkbox"]:before {
 }
 .sectit {
   margin: 0.5em;
-  font-size: 27px;
+  /* font-size: 27px; */
 }
 .tits {
   margin-top: 2em;
@@ -232,7 +232,7 @@ input:checked[type="checkbox"]:before {
   color: #000 !important;
 }
 .cardtitle {
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 .cardsub {
   font-size: 22px;
@@ -251,7 +251,7 @@ input:checked[type="checkbox"]:before {
   border-radius: 15px;
 }
 .cardtit {
-  font-size: 23px;
+  /* font-size: 23px; */
   color: #000;
   text-decoration: none;
   margin-bottom: 0em;
@@ -265,7 +265,7 @@ input:checked[type="checkbox"]:before {
   padding-left: 1em;
 }
 .cardsm {
-  padding: 0.5em 0em 0.5em 1em !important;
+  padding: 0.5em 0em 0.5em 0em !important;
   margin: 0 0.5em !important;
 }
 .carda {
@@ -294,7 +294,8 @@ input:checked[type="checkbox"]:before {
   border-radius: 20px;
 }
 .lastcrd {
-  margin-bottom: 4em !important;
+  /* margin-bottom: 4em !important; */
+  padding-bottom: 4em !important;
 }
 .iconbar i {
   display: flex;
@@ -342,14 +343,23 @@ input:checked[type="checkbox"]:before {
   top: 1em;
   bottom: auto;
   color: #000 !important;
+  transition: 0.5s ease;
+  opacity: 0 !important;
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
 }
-.cimg {
-  opacity: 0.5 !important;
-  filter: grayscale(20%) !important;
-  /* transition-duration: 4s; */
+.carousel-inner {
+  border-radius: 20px;
+  max-height: 150px !important;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
-.cimg:hover .cimg:active {
-  opacity: 0.2 !important;
-  filter: grayscale(70%) !important;
-  /* transition-duration: 4s; */
+.carousel-inner:hover img {
+  opacity: 0.2;
+}
+.carousel-inner:hover .carousel-caption {
+  opacity: 1 !important;
+}
+.fa-star {
+  color: #ffd966;
 }
