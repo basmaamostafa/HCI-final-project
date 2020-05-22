@@ -18,9 +18,9 @@ nav {
   background-color: #fff !important;
   margin-top: 0.5em;
 }
-.active {
+/* .active {
   /* background-color: #000!important; */
-}
+
 .activei {
   color: #ffd966;
 }
@@ -344,7 +344,7 @@ input:checked[type="checkbox"]:before {
   color: #000 !important;
 }
 .cimg {
-  opacity: 1 !important;
+  opacity: 0.5 !important;
   filter: grayscale(20%) !important;
   /* transition-duration: 4s; */
 }
