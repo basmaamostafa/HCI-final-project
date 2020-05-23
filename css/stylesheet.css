@@ -317,7 +317,6 @@ input:checked[type="checkbox"]:before {
 }
 .btnpage {
   margin-top: 0.5em;
-  width: 50%;
   border-radius: 12px !important;
   background-color: #fff !important;
   color: #000 !important;
@@ -376,3 +375,26 @@ input:checked[type="checkbox"]:before {
 .credit {
   opacity: 0.5;
 }
+.noti {
+  text-align: center;
+  margin-top: 50%;
+  opacity: 0.4;
+}
+/* #imagePreview {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  content: "click Here";
+  color: black;
+}
+#imagePreview img {
+  width: 100%;
+}
+
+input[type="file"] {
+  display: none;
+} */
