@@ -18,86 +18,81 @@
   </head>
   <body>
     <div id="container">
-        <!-- NavBar -->
-        <nav class="fixed-bottom">
-          <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-              <a class="nav-link " href="./home.html">
-                <i class="fas fa-home fa-2x"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="./jobs.html">
-                <i class="fas fa-briefcase fa-2x"></i>
-              </a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link " href="./services.html">
-                <i class="fab fa-microblog fa-2x "></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Notification.html">
-                <i class="fas fa-bell fa-2x"></i>            
-              </a>
-              </a>
-            </li>
-            <li class="nav-item disabled">
-              <a class="nav-link disabled" href="./profile.html">
-                <i class="fas fa-user fa-2x activei"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <!-- NavBar -->
+      <nav class="fixed-bottom">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" href="./home.html">
+              <i class="fas fa-home fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="/jobs.html">
+              <i class="fas fa-briefcase fa-2x "></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./services.html">
+              <i class="fab fa-microblog fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Notification.html">
+              <i class="fas fa-bell fa-2x"></i>            
+            </a>
+            </a>
+          </li>
+          <li class="nav-item disabled">
+            <a class="nav-link disabled" href="./profile.html">
+              <i class="fas fa-user fa-2x activei"></i>
+            </a>
+          </li>
+        </ul>
+      </nav></div>
+      <!-- ********************************** -->
       <div class="container-fluid">
-        <div class="row logo-exit">
-          <div class=""> 
-            <h4 class="col-10 mt-4 mb-4 cardtitle" >Profile</h4>
+        <div class="row w-100">
+          <div class="col-10"> 
+            <h4 class="mt-4 mb-4 cardtitle" >Profile</h4>
           </div> 
           <div class="col-2">
-          <a href="./index.html"> <i class=" fas fa-sign-out-alt fa-2x"></i></a> 
+            <a href="./index.html"> <i class=" fas fa-sign-out-alt fa-2x"></i></a> 
+            </div>
           </div>
+          <div class="row">
+            <div class="col-3">
+              <!-- <div id="imagePreview"></div>
+            <input id="uploadFile" type="file" name="image" class="img" /> -->
           </div>
-<div class="row">
-        <div class="col-3">
-          <!-- <div id="imagePreview"></div>
-        <input id="uploadFile" type="file" name="image" class="img" /> -->
-      </div>
-        <div class="col-8">
-        <h5>Basma Mostafa</h5>
-        <p style="margin-top: -.5em;">Student</p>
-        <p style="margin-top: -1em;">70 Follower</p>
-      </div></div>
-
-        <div class="row">
-          <button type="submit" class="col-3 btnpage btn btnpageactive disabled"
+            <div class="col-8">
+            <h5>Basma Mostafa</h5>
+            <p style="margin-top: -.5em;">Student</p>
+            <p style="margin-top: -1em;">70 Follower</p>
+          </div></div>
+          <div class="row">
+            <button type="submit" class="col-3 btnpage btn btnpageactive disabled"
+            >
+           Bio           
+          </button>
+          <button type="submit" class="col-3 btnpage btn btnpageactive" 
+          onclick="window.location.href=('./profile/skills.html');"
           >
-         Bio           
+          Skills
         </button>
         <button type="submit" class="col-3 btnpage btn btnpageactive" 
-        onclick="window.location.href=('./profile/skills.html');"
+        onclick="window.location.href=('./courses.html');"
         >
-        Skills
+        Activities
       </button>
       <button type="submit" class="col-3 btnpage btn btnpageactive" 
       onclick="window.location.href=('./courses.html');"
       >
-      Activities
+      More
     </button>
-    <button type="submit" class="col-3 btnpage btn btnpageactive" 
-    onclick="window.location.href=('./courses.html');"
-    >
-    More
-  </button>
-
-
-      </div>
-
-      <p class="" style="margin-top: 1em;">
-        Student at Arab Academy For Science And Technology (AAST) Major Business information system (BIS) ,2017 Graduation expected 2021 ,Alexandria Miami branch.
+    <p class="" style="margin-top: 1em;">
+      Student at Arab Academy For Science And Technology (AAST) Major Business information system (BIS) ,2017 Graduation expected 2021 ,Alexandria Miami branch.
 </p>
-                    <h5 style="margin-top: 1em; margin-bottom: .5em;">Basic information</h5>
+                  <h5 style="margin-top: 1em; margin-bottom: .5em;">Basic information</h5>
 <ul>
 <li style="list-style-image: url(/img/address.png);">Egypt, Alexandria, Camp chezar
 </li>
@@ -109,10 +104,32 @@
 <li style="list-style-image: url(/img/passion.png);">Single
 </li>
 </ul>
+  
+  
+        </div>
+  
+         
     </div>
 
     <script src="/js/imagePreview.js"></script>
 
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+        </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

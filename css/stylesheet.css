@@ -181,10 +181,9 @@ input:checked[type="checkbox"]:before {
   /* margin: 0em -.8em 0em; */
   /* padding-left: 1em; */
 }
-.logo-exit {
-  display: flex;
-  justify-content: space-between;
-}
+/* .logo-exit { */
+
+/* } */
 .fa-sign-out-alt {
   margin-top: 0.7em;
   margin-right: 1em;
@@ -231,9 +230,9 @@ input:checked[type="checkbox"]:before {
   background-color: #ffd966 !important;
   color: #000 !important;
 }
-.cardtitle {
-  /* font-size: 30px; */
-}
+/* .cardtitle { */
+/* font-size: 30px; */
+/* } */
 .cardsub {
   font-size: 22px;
   margin-top: -0.5em;
