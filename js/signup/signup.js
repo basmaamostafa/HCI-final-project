@@ -56,7 +56,7 @@ function validateForm() {
     // alert("Name must be filled out");
     cp.innerHTML = "Password must be filled out";
     return false;
-  } else if (confirm !== password) {
+  } else if (confirmPassword !== password) {
     cp.innerHTML = "Please enter a the same password";
     return false;
   }
