@@ -30,4 +30,38 @@ function validateForm() {
       return false;
     }
   }
+
+  var password = document.forms["myForm"]["pass"].value;
+  var p = document.getElementById("passError");
+
+  if (password == "") {
+    // alert("Name must be filled out");
+    p.innerHTML = "Password must be filled out";
+    return false;
+  } else {
+    var passTest = new RegExp(
+      "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})"
+    );
+
+    if (passTest == -1) {
+      p.innerHTML = "Please enter a another password";
+      return false;
+    }
+  }
+
+  var confirmPassword = document.forms["myForm"]["confirm"].value;
+  var cp = document.getElementById("passError");
+
+  if (confirmPassword == "") {
+    // alert("Name must be filled out");
+    cp.innerHTML = "Password must be filled out";
+    return false;
+  } else {
+    var conpassTest == passTest);
+
+    if (conpassTest == -1) {
+      cp.innerHTML = "Please enter a the same password";
+      return false;
+    }
+  }
 }
