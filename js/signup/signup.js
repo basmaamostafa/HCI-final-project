@@ -44,7 +44,7 @@ function validateForm() {
     );
 
     if (passTest == -1) {
-      p.innerHTML = "Please enter a another password";
+      p.innerHTML = "Please enter a stronger password";
       return false;
     }
   }
@@ -57,7 +57,7 @@ function validateForm() {
     cp.innerHTML = "Password must be filled out";
     return false;
   } else {
-    var conpassTest == passTest);
+    var (conpassTest == passTest);
 
     if (conpassTest == -1) {
       cp.innerHTML = "Please enter a the same password";
