@@ -50,18 +50,14 @@ function validateForm() {
   }
 
   var confirmPassword = document.forms["myForm"]["confirm"].value;
-  var cp = document.getElementById("passError");
+  var cp = document.getElementById("cpassError");
 
   if (confirmPassword == "") {
     // alert("Name must be filled out");
     cp.innerHTML = "Password must be filled out";
     return false;
-  } else {
-    var (conpassTest == passTest);
-
-    if (conpassTest == -1) {
-      cp.innerHTML = "Please enter a the same password";
-      return false;
-    }
+  } else if (confirm !== password) {
+    cp.innerHTML = "Please enter a the same password";
+    return false;
   }
 }
