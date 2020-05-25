@@ -13,6 +13,8 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <script src="/js/signup/sign2.js"></script>
+
 <script src="/js/signup/signUp2.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
@@ -58,16 +60,22 @@
       <!-- signup -->
 
       <div class="container-fluid">
+        <p id="test"></p>
         <h2 class="title tits">Sign Up ..</h2>
-        <textarea name="" id="signupBio" cols="30" rows="4" style="margin: 1em 0;"
-        class="form-control" placeholder="Write your bio..." ></textarea>     
-        <p id="bio"></p>
+        <form action="" onsubmit="return validateForm()" method="post" name='myForm'>
+        <input type="text" name="biotxt" class="form-control" placeholder="Write your bio...">
+<!--         
+          <textarea name="biotxt" id="signupBio" cols="30" rows="4" style="margin: 1em 0;"
+        class="form-control" placeholder="Write your bio..." ></textarea>    -->
+        <p style="color: red;" id="bioError"></p>
+  
         <input
         type="text"
         class="form-control"
         placeholder="Add your skills"
         style="margin: 1em 0;"
       />
+      <p style="color: red;" id="bioError"></p>
 
       <input
       type="text"
@@ -93,10 +101,12 @@
   placeholder="Write your birthday date"
   style="margin: 1em 0;"
 />        
-      <button type="submit" onclick="session()" class="btn btn-primary btn-lg btn-block" formaction="./home.html">
-            Sign Up
-          </button>
+<input type="submit" value="Next" class="btn btn-primary btn-lg btn-block">
 
+<!-- <button type="submit" onclick="session()" class="btn btn-primary btn-lg btn-block" formaction="./home.html">
+            Sign Up
+          </button> -->
+        </form>
 
         <!-- popup -->
         
