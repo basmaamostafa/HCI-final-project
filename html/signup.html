@@ -13,6 +13,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <script src="/js/signup/signup.js"></script>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
@@ -59,7 +60,7 @@
 
       <div class="container-fluid">
         <h2 class="title tits">Sign Up</h2>
-        <form class="signform">
+        <form class="signform" onsubmit="return validateForm()" method="post" name='myForm'>
           <div class="form-group">
             <input
               type="text"
@@ -67,7 +68,9 @@
               id="exampleInputName"
               aria-describedby="emailHelp"
               placeholder="Enter your full name"
+              name="fname"
             />
+            <p style="color: red;" id="nameError"></p>
           </div>
           <div class="form-group">
             <input
@@ -102,9 +105,10 @@
           </div>
             </div>
               </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-block" formaction="./signup2.html">
+              <input type="submit" value="sign up">
+          <!-- <button type="submit" class="btn btn-primary btn-lg btn-block" formaction="./signup2.html">
             Sign Up
-          </button>
+          </button> -->
           <div class="signq">
             <a class="optionin" href="./signin.html"><p> Already  have an account? Sign In</p></a>
           </div>
