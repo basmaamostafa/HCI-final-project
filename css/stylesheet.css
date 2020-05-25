@@ -58,6 +58,7 @@ padding-bottom: 2em;
 } */
 .form-control {
   border-radius: 20px !important;
+  margin: 1em 0;
 }
 input:focus,
 input:active,
@@ -378,7 +379,8 @@ input:checked[type="checkbox"]:before {
 }
 .noti {
   text-align: center;
-  margin-top: 50%;
+  margin-top: 0 auto;
+  padding-top: 10em;
   opacity: 0.4;
 }
 /* #imagePreview {
@@ -426,4 +428,18 @@ input[type="file"] {
 .card-body {
   background-color: #f7f7f7 !important;
   border: none !important;
+}
+/*skill add */
+.items span {
+  background-color: #ffd966;
+  color: #000;
+  padding: 0.3em 0.5em;
+  border-radius: 10px;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+.items i {
+  margin-left: 0.5em;
+  cursor: pointer;
 }

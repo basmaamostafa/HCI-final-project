@@ -13,9 +13,10 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <script src="/js/signup/sign2.js"></script>
-
-<script src="/js/signup/signUp2.js"></script>
+    <!-- <script src="/js/signup/sign2.js"></script> -->
+    <!-- <script src="/js/signup/skills.js"></script> -->
+ 
+<!-- <script src="/js/signup/signUp2.js"></script> -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
@@ -82,7 +83,7 @@
           <textarea name="biotxt" id="signupBio" cols="30" rows="4" style="margin: 1em 0;"
         class="form-control" placeholder="Write your bio..." ></textarea>    -->
   
-        <input
+        <!-- <input
         type="text"
         class="form-control"
         placeholder="Add your skills/Tools"
@@ -90,7 +91,38 @@
         name="skill"
       />
       <p style="color: #ffd966; margin-left: 1em;" id="skillError"></p>
+             -->
+             <div class="place">
+              <div class="add row">
+              <input type="text"placeholder="Add your skills/Tools"
+              id="input-add " class="form-control col-8"name="skill" >
+              <!-- <input type="button" value="Add" id="add" class="btn col-2"> -->
+                  <button id="add" class="btn col-2" >Add</button>
+                  <p style="color: #ffd966; margin-left: 1em;" id="skillError"></p>
+              </div>
+              <div class="items ">
+              </div>
+          </div>
+<script>
+  document.querySelector("#add").onclick = function () {
+  "use strict";
+  if (document.querySelector("#input-add").value === "") {
+    document.querySelector("#input-add").onclick = function () {};
+  } else {
+    var span = document.createElement("span"),
+      times = document.createElement("i");
+    times.setAttribute("class", "fas fa-times");
+    span.textContent = document.querySelector("#input-add").value;
+    span.appendChild(times);
+    document.querySelector(".items").appendChild(span);
+    document.querySelector("#input-add").value = "";
+    times.onclick = function () {
+      this.parentElement.style.display = "none";
+    };
+  }
+};
 
+</script>
 
     <input
     type="text"
@@ -109,7 +141,7 @@
 />        
 <p style="color: #ffd966; margin-left: 1em;" id="dateError"></p>
 
-<input type="submit" value="Sign Up" class="btn btn-primary btn-lg btn-block">
+<input type="submit" id="submitbtn" value="Sign Up" class="btn btn-primary btn-lg btn-block">
 
 <!-- <button type="submit" onclick="session()" class="btn btn-primary btn-lg btn-block" formaction="./home.html">
             Sign Up
