@@ -22,7 +22,9 @@ function validateForm() {
     e.innerHTML = "E-Mail must be filled out";
     return false;
   } else {
-    var emailTest = email.search(/^[A-Za-z]+$/);
+    var emailTest = email.search(
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    );
     if (emailTest == -1) {
       e.innerHTML = "Please enter a valid email";
       return false;
