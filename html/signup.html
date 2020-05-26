@@ -61,11 +61,10 @@
 
       <div class="container-fluid">
         <h2 class="tits" style="text-align: center; margin-bottom: 1em;">Sign Up</h2>
-        <form class="" onsubmit="return validateForm()" method="post" name='myForm'>
+        <form onsubmit="return validateForm()" method="post" name='myForm' action="./sign_up2.html">
             <input
               type="text"
               class="form-control"
-              id="exampleInputName"
               aria-describedby="emailHelp"
               placeholder="Enter your full name"
               name="fname"
@@ -74,7 +73,6 @@
             <input
               type="text"
               class="form-control"
-              id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter a valid email"
               name="mail"
@@ -84,7 +82,6 @@
             <input
               type="text"
               class="form-control"
-              id="exampleInputPassword1"
               placeholder="Enter password"
               name="pass"
             />
@@ -92,7 +89,6 @@
             <input
               type="text"
               class="form-control"
-              id="exampleInputPassword1"
               placeholder="Confirm Password"
               name="confirm"
             />
@@ -102,11 +98,11 @@
               <div class="input-group input-group-sm">
                 <input type="checkbox" class="" id="check" name="">
                 <label for=""  class="checklabel">I accept the terms of use</label>
-                <p style="color: #ffd966; margin-left: 1em;" id="checkError"></p>
 
           </div>
             </div>
               </div>
+              <p style="color: #ffd966; margin-left: 1em;" id="checkError"></p>
               <input type="submit" value="Next" class="btn btn-primary btn-lg btn-block">
           <!-- <button type="submit" class="btn btn-primary btn-lg btn-block" formaction="./signup2.html">
             Sign Up
