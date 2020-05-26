@@ -14,12 +14,12 @@ function validateForm() {
     return false;
   }
 
-  var skill = document.forms["myForm"]["skill"].value;
-  var skillP = document.getElementById("skillError");
-  if (skill == "") {
-    skillP.innerHTML = "Skill/Tolls must be filled out";
-    return false;
-  }
+  // var skill = document.forms["myForm"]["skill"].value;
+  // var skillP = document.getElementById("skillError");
+  // if (skill == "") {
+  //   skillP.innerHTML = "Skill/Tolls must be filled out";
+  //   return false;
+  // }
 
   var college = document.forms["myForm"]["college"].value;
   var collegep = document.getElementById("collegeError");

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp..</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="/js/signup/sign2.js"></script>
+    <!-- <script src="/js/signup/skills.js"></script> -->
+
+    <!-- <script src="/js/signup/signUp2.js"></script> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <button
+      class="backbtn fixed-top"
+      action="action"
+      onclick="window.history.go(-1); return false;"
+      type="submit"
+      value="Cancel"
+    >
+      <i class="fas fa-chevron-left fa-lg"></i>
+    </button>
+    <div class="container-fluid">
+      <form onsubmit="return validateForm()" method="post" name="myForm">
+        <p id="test"></p>
+        <h2 class="tits" style="text-align: center; margin-bottom: 1em;">
+          Sign Up ..
+        </h2>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Write your Education level "
+          name="edutxt"
+        />
+        <p style="color: #ffd966; margin-left: 1em;" id="eduError"></p>
+
+        <input
+          type="text"
+          name="biotxt"
+          class="form-control"
+          placeholder="Write your bio..."
+        />
+        <p style="color: #ffd966; margin-left: 1em;" id="bioError"></p>
+
+        <div class="place">
+          <div class="add row">
+            <input
+              type="text"
+              placeholder="add your skills"
+              id="input-add"
+              class="form-control col-9"
+              name="skill"
+            />
+            <!-- <button id="add" class="btn col-2">Add</button> -->
+            <a href="#" id="add" class="col-1"><i class="fas fa-plus"></i></a>
+          </div>
+          <p style="color: #ffd966; margin-left: 1em;" id="skillError"></p>
+          <div class="items"></div>
+        </div>
+        <script>
+          document.querySelector("#add").onclick = function () {
+            "use strict";
+            if (document.querySelector("#input-add").value === "") {
+              document.querySelector("#input-add").onclick = function () {};
+            } else {
+              var span = document.createElement("span"),
+                times = document.createElement("i");
+              times.setAttribute("class", "fas fa-times");
+              span.textContent = document.querySelector("#input-add").value;
+              span.appendChild(times);
+              document.querySelector(".items").appendChild(span);
+              document.querySelector("#input-add").value = "";
+              times.onclick = function () {
+                this.parentElement.style.display = "none";
+              };
+            }
+          };
+        </script>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Write your college/university"
+          id="college"
+          name="college"
+        />
+        <p style="color: #ffd966; margin-left: 1em;" id="collegeError"></p>
+
+        <input
+          type="date"
+          class="form-control"
+          placeholder="Write your birthday date"
+          name="date"
+        />
+        <p style="color: #ffd966; margin-left: 1em;" id="dateError"></p>
+
+        <input
+          type="submit"
+          id="submitbtn"
+          value="Sign Up"
+          class="btn btn-primary btn-lg btn-block"
+        />
+      </form>
+    </div>
+  </body>
+</html>
