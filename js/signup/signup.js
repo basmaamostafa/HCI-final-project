@@ -10,7 +10,9 @@ function validateForm() {
   var cp = document.getElementById("cpassError");
   var termsofuse = document.getElementById("check").checked;
   var checkerror = document.getElementById("checkError");
-  var nameTest = fullName.search(/^[a-z,',-]+(\s)[a-z,',-]+$/);
+  var nameTest = fullName.search(
+    /^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$/
+  );
   var emailTest = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
   var passTest = /^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/.test(
     password
