@@ -4,12 +4,10 @@ function validateForm() {
   var n = document.getElementById("nameError");
   var email = document.forms["myForm"]["mail"].value;
   var e = document.getElementById("mailError");
-
   var password = document.forms["myForm"]["pass"].value;
   var p = document.getElementById("passError");
   var confirmPassword = document.forms["myForm"]["confirm"].value;
   var cp = document.getElementById("cpassError");
-
   var termsofuse = document.getElementById("check").checked;
   var checkerror = document.getElementById("checkError");
   var nameTest = fullName.search(/^[A-Za-z]+$/);
@@ -48,7 +46,7 @@ function validateForm() {
     checkerror.innerHTML = "Please accept terms of use";
     return false;
   } else {
-    window.location.href = "./sign_up2.html";
+    // window.location.href = "./sign_up2.html";
     return true;
   }
   // document.getElementById("myForm").action = "./sign_up2.html";
