@@ -13,7 +13,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-
+<script src="/js/signup/sign2.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
@@ -56,7 +56,7 @@
             <h4 class="mt-4 mb-4 cardtitle" >Profile</h4>
           </div> 
           <div class="col-1">
-            <a href="./index.html"> <i class=" fas fa-sign-out-alt fa-2x"></i></a> 
+            <a href="/html/sign_up2.html"> <i class=" fas fa-sign-out-alt fa-2x"></i></a> 
             </div>
           </div>
 <div class="row">
@@ -96,21 +96,21 @@
  
       <h5 style="margin-top: 1em; margin-bottom: .5em;">Skills/Tools</h5>
       <ul class="fa-ul">
-        <li> <span class="fa-li"><i class="fas fa-laptop "></i></span>UI/UX design
-        </li>
-        <li> <span class="fa-li"><i class="fas fa-laptop "></i></span>PHP
-        </li>
-        </li>
-        <li> <span class="fa-li"><i class="fas fa-laptop"></i></span>Adobe photoshop
-        </li>
-        <li> <span class="fa-li"><i class="fas fa-laptop"></i></span>Figma
-        </li>
-        <script>document.write(sessionStorage.getItem("SKILL"));</script>
+       
+        <script>
+          var arr=JSON.parse(sessionStorage.getItem("SKILL"));
+          for (i = 0; i < arr.length; i++) {
+               document.write('<li><span class="fa-li"><i class="fas fa-laptop "></i></span>'+arr[i]+'</li>');
+  
+      // document.write(sessionStorage.getItem("SKILL"));
+          }
+          </script>
       </ul>
+     
 
     </div>
 
-    <script src="/js/imagePreview.js"></script>
+    <!-- <script src="/js/imagePreview.js"></script> -->
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

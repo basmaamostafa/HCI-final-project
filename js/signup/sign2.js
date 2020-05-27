@@ -6,6 +6,8 @@ function validateForm() {
   var bioP = document.getElementById("bioError");
   // var bioTest = bio.search(/^[A-Za-z]+$/);
   var skill = document.getElementById("skillSpan");
+  // var skillItem = skillarr;
+
   // document.forms["myForm"]["skill"].value;
   var skillP = document.getElementById("skillError");
   var college = document.forms["myForm"]["college"].value;
@@ -38,8 +40,12 @@ function validateForm() {
     skillP.innerHTML = "Skill/Tolls must be filled out";
     return false;
   } else {
-    sessionStorage.setItem("SKILL", skill);
+    sessionStorage.setItem("SKILL", JSON.stringify(skillarr));
   }
+  // } else {
+  //   // skillItem = document.getElementsByName("skillItem");
+  //   // sessionStorage.setItem("SKILL", skillItem);
+  // }
   if (college == "") {
     collegep.innerHTML = "College/University must be filled out";
     return false;

@@ -72,6 +72,7 @@
           <div class="items"></div>
         </div>
         <script>
+          skillarr = [];
           document.querySelector("#add").onclick = function () {
             "use strict";
             if (document.querySelector("#input-add").value === "") {
@@ -81,7 +82,9 @@
                 times = document.createElement("i");
               span.setAttribute("id", "skillSpan");
               times.setAttribute("class", "fas fa-times");
+              times.setAttribute("name", "skillItem");
               span.textContent = document.querySelector("#input-add").value;
+              skillarr.push(span.innerHTML);
               span.appendChild(times);
               document.querySelector(".items").appendChild(span);
               document.querySelector("#input-add").value = "";
