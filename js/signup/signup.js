@@ -38,9 +38,9 @@ function validateForm() {
     // alert("Name must be filled out");
     p.innerHTML = "Password must be filled out";
     return false;
-  } else if (!passTest) {
-    p.innerHTML = "Please enter a stronger password";
-    return false;
+    // } else if (!passTest) {
+    //   p.innerHTML = "Please enter a stronger password";
+    //   return false;
   } else if (confirmPassword == "") {
     cp.innerHTML = "Password must be filled out";
     return false;
