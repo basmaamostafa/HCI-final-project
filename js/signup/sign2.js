@@ -37,6 +37,8 @@ function validateForm() {
   if (!skill) {
     skillP.innerHTML = "Skill/Tolls must be filled out";
     return false;
+  } else {
+    sessionStorage.setItem("SKILL", skill);
   }
   if (college == "") {
     collegep.innerHTML = "College/University must be filled out";
