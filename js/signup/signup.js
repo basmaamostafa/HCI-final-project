@@ -12,9 +12,8 @@ function validateForm() {
   var checkerror = document.getElementById("checkError");
   var nameTest = fullName.search(/^[a-zA-Z ]+$/);
   var emailTest = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
-  var passTest = /^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/.test(
-    password
-  );
+  var passTest = /^[0-9a-zA-Z]+$/.test(password);
+
   // var nameTest = fullName.search/);
 
   if (fullName == "") {
@@ -39,9 +38,9 @@ function validateForm() {
     // alert("Name must be filled out");
     p.innerHTML = "Password must be filled out";
     return false;
-    // } else if (!passTest) {
-    //   p.innerHTML = "Please enter a stronger password";
-    //   return false;
+  } else if (!passTest) {
+    p.innerHTML = "You can't enter symbol";
+    return false;
   } else if (confirmPassword == "") {
     cp.innerHTML = "Password must be filled out";
     return false;
