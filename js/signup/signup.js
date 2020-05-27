@@ -20,10 +20,14 @@ function validateForm() {
     // alert("Name must be filled out");
     n.innerHTML = "Name must be filled out";
     return false;
-  } else if (nameTest == -1) {
+  } else if (nameTest) {
     n.innerHTML = "Please enter letters only";
     return false;
-  } else if (email == "") {
+  } else {
+    sessionStorage.setItem("FULLNAME", fullName);
+  }
+
+  if (email == "") {
     // alert("Name must be filled out");
     e.innerHTML = "E-Mail must be filled out";
     return false;
@@ -50,10 +54,18 @@ function validateForm() {
     // window.location.href = "./sign_up2.html";
     return true;
   }
+
   // document.getElementById("myForm").action = "./sign_up2.html";
   // return true;
+  // var fullName = document.getElementById("fname");
+  // if (typeof Storage !== "undefined") {
+  //   if (fullName) {
+  //     essionStorage.setItem("FULLNAME", fullName);
+  //     document.getElementById("fullNameP") = sessionStorage.getItem("FULLNAME");
+  //   }
+  // }
 }
 // // window.location.href = "./html/sign_up2.html";
 // var form = document.getElementById("myForm");
 // form.action = "./sign_up2.html";
-// // form.submit();
+// // form.submit()

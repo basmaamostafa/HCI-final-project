@@ -14,11 +14,11 @@
       crossorigin="anonymous"
     />
     <script src="/js/signup/signup.js"></script>
-    <script src="/js/signup/signUp2.js"></script>
+    <script src="/js/signup/signupSession.js"></script>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body>
+  <body onload="session();">
     <div id="container">
       <!-- NavBar -->
       <!-- <nav class="fixed-bottom">
@@ -52,7 +52,7 @@
       </nav> -->
       <button class="backbtn fixed-top"       
       action="action"
-      onclick="window.history.go(-1); return false;"
+      onclick="window.location.href=('index.html');"
       type="submit"
       value="Cancel">
       <i class="fas fa-chevron-left fa-lg"></i>
