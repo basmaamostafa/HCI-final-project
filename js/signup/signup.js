@@ -11,12 +11,13 @@ function validateForm() {
   var termsofuse = document.getElementById("check").checked;
   var checkerror = document.getElementById("checkError");
   var nameTest = fullName.search(
-    /^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$/
+    /^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$/ || /^[A-Za-z]+$/
   );
   var emailTest = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
   var passTest = /^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/.test(
     password
   );
+  // var nameTest = fullName.search/);
 
   if (fullName == "") {
     // alert("Name must be filled out");
@@ -40,9 +41,9 @@ function validateForm() {
     // alert("Name must be filled out");
     p.innerHTML = "Password must be filled out";
     return false;
-    // } else if (!passTest) {
-    //   p.innerHTML = "Please enter a stronger password";
-    //   return false;
+  } else if (!passTest) {
+    p.innerHTML = "Please enter a stronger password";
+    return false;
   } else if (confirmPassword == "") {
     cp.innerHTML = "Password must be filled out";
     return false;
