@@ -20,6 +20,12 @@
 
   </head>
   <body>
+    <script>
+      var ses = sessionStorage.getItem('FULLNAME');
+      if (!ses){
+        window.location.href = '/html/index.html';
+      }
+    </script>
     <div id="container">
       <!-- NavBar -->
       <nav class="fixed-bottom">
