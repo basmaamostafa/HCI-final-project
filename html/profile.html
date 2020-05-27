@@ -13,7 +13,8 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-
+<script src="/js/signup/signup.js"></script>
+<script src="/js/signup/sign2.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="/js/imagePreview.js"></script>
 
@@ -67,8 +68,8 @@
             <input id="uploadFile" type="file" name="image" class="img" /> -->
           </div>
             <div class="col-8">
-            <h5>Username</h5>
-            <p style="margin-top: -.5em;">Student</p>
+            <h5><script>document.write(sessionStorage.getItem("FULLNAME"));</script></h5>
+            <p style="margin-top: -.5em;"><script>document.write(sessionStorage.getItem("EDUCATION"));</script></p>
           </div></div>
           <div class="row">
             <button type="submit" class="col-3 btnpage btn btnpageactive disabled"
@@ -92,13 +93,13 @@
     </button>
     <div style="margin-left: 1em;">
       <p class="" style="margin-top: 1em;">
-      Student at Arab Academy For Science And Technology (AAST) Major Business information system (BIS) ,2017 Graduation expected 2021 ,Alexandria Miami branch.
+        <script>document.write(sessionStorage.getItem("BIO"));</script>
 </p>
                   <h5 style="margin-top: 1em; margin-bottom: .5em;">Basic information</h5>
 <ul>
-<li style="list-style-image: url(/img/calendar.png);">27 August 
+<li style="list-style-image: url(/img/calendar.png);"> <script>document.write(sessionStorage.getItem("BOD"));</script>
 </li>
-<li style="list-style-image: url(/img/collage.png);">Arab Academy For Science And Technology
+<li style="list-style-image: url(/img/collage.png);"> <script>document.write(sessionStorage.getItem("COLLEGE"));</script>
 
 
 </ul>
