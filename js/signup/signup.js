@@ -12,9 +12,10 @@ function validateForm() {
   var checkerror = document.getElementById("checkError");
   var nameTest = fullName.search(/^[A-Za-z]+$/);
   var emailTest = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
-  var passTest = new RegExp(
-    "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})"
+  var passTest = /^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/.test(
+    password
   );
+
   if (fullName == "") {
     // alert("Name must be filled out");
     n.innerHTML = "Name must be filled out";
@@ -33,7 +34,7 @@ function validateForm() {
     // alert("Name must be filled out");
     p.innerHTML = "Password must be filled out";
     return false;
-  } else if (passTest == -1) {
+  } else if (!passTest) {
     p.innerHTML = "Please enter a stronger password";
     return false;
   } else if (confirmPassword == "") {
