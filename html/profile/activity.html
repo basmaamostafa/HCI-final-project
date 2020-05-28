@@ -6,7 +6,27 @@
     <title>Life Labour</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="stylesheet" href="/css/img.css" />
 
+    <link
+    href="https://fonts.googleapis.com/css?family=Quicksand:400,700"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+  />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -59,11 +79,28 @@
             <a href="./index.html"> <i class=" fas fa-sign-out-alt fa-2x"></i></a> 
             </div>
           </div>
-<div class="row">
-        <div class="col-3">
-          <!-- <div id="imagePreview"></div>
-        <input id="uploadFile" type="file" name="image" class="img" /> -->
-      </div>
+          <div class="row" style="margin-bottom: -2em;">
+            <div class="col-4">
+    <div class="page-holder">
+      <form>
+        <div class="upload-image preview-img-upload">
+          <div class="preview-img-holder">
+            <span class="remove-image fa fa-times"></span>
+            <div class="img-holder">
+              <img class="preview-img" src="" alt="image" draggable="false" />
+            </div>
+          </div>
+          <label class="input-holder"
+            >
+            <i class="icon fas fa-cloud-upload-alt"></i>
+
+            <input class="hide" type="file" accept="image/*" />
+          </label>
+        </div>
+      </form>
+    </div>
+
+</div>
         <div class="col-8">
           <h5><script>document.write(sessionStorage.getItem("FULLNAME"));</script></h5>
           <p style="margin-top: -.5em;"><script>document.write(sessionStorage.getItem("EDUCATION"));</script></p>
@@ -142,5 +179,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/signup/img.js"></script>
+
   </body>
 </html>

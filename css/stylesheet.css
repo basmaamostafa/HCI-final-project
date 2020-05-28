@@ -465,7 +465,7 @@ input[type="file"] {
   width: 100%;
   /* margin-top: -0.1em !important; */
 }
-#uploadPreview {
+/* #uploadPreview {
   width: 7em;
   height: 7em;
   background-size: cover;
@@ -481,3 +481,4 @@ input[type="file"] {
 /* input[type="file"] {
   display: none;
 } */
+//
