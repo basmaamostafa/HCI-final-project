@@ -61,7 +61,7 @@
       <!-- ********************************** -->
       <div class="container-fluid">
         <div class="row w-100">
-          <div class="col-10"> 
+          <div class="col-11"> 
             <h4 class="mt-4 mb-4 cardtitle" >Profile</h4>
           </div> 
           <div class="col-1">
@@ -69,10 +69,25 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-3">
-              <!-- <div id="imagePreview"></div>
-            <input id="uploadFile" type="file" name="image" class="img" /> -->
+            <div class="col-4">
+                <img id="uploadPreview" />
+                <input
+                  id="uploadImage"
+                  type="file"
+                  name="myPhoto"
+                  onchange="PreviewImage();"
+                />
           </div>
+          <script type="text/javascript">
+            function PreviewImage() {
+              var oFReader = new FileReader();
+              oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+      
+              oFReader.onload = function (oFREvent) {
+                document.getElementById("uploadPreview").src = oFREvent.target.result;
+              };
+            }
+          </script>
             <div class="col-8">
             <h5><script>document.write(sessionStorage.getItem("FULLNAME"));</script></h5>
             <p style="margin-top: -.5em;"><script>document.write(sessionStorage.getItem("EDUCATION"));</script></p>

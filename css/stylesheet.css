@@ -465,3 +465,19 @@ input[type="file"] {
   width: 100%;
   /* margin-top: -0.1em !important; */
 }
+#uploadPreview {
+  width: 7em;
+  height: 7em;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+#uploadImage {
+  cursor: pointer;
+  width: 200px;
+  height: 100px;
+  border: none;
+}
+/* input[type="file"] {
+  display: none;
+} */
