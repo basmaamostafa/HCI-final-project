@@ -482,3 +482,23 @@ input[type="file"] {
   display: none;
 } */
 //
+/* Tabs*/
+.tabss {
+  clear: both;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #ffd966 !important;
+  padding: 0.5em;
+}
+.nav-tabs .nav-link {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  border: none !important;
+  color: #000;
+  padding: 0.5em;
+}
+.nav-link:hover {
+  border: 1px solid #ffd966 !important;
+  border-bottom: none !important;
+}
