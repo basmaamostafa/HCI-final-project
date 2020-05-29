@@ -3,9 +3,9 @@
 }
 .avatar-upload .avatar-edit {
   position: absolute;
-  right: 12px;
+  right: -14px;
   z-index: 1;
-  top: 10px;
+  top: 4px;
 }
 
 .avatar-upload .avatar-edit input {
