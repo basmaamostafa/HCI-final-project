@@ -1,113 +1,51 @@
-.hide {
-  display: none;
-}
-.page-holder.active form {
-  margin-top: 60px;
-  opacity: 0;
-}
-form {
-  width: 300px;
-  position: relative;
-  -webkit-transition: 1s;
-  transition: 1s;
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  opacity: 1;
-}
-form .input-holder {
-  width: 300px;
-  height: 35px;
-  margin-bottom: 14px;
-  display: block;
-  position: relative;
-  /* background-color: rgba(255,255,255,0.1); */
-  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
-}
-form .input-holder .input-title {
+.avatar-upload {
   position: absolute;
-  font-size: 16px;
-  bottom: 7px;
-  left: 0;
-  color: #000;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
-form .input-holder input {
-  width: 300px;
-  height: 35px;
-  background-color: transparent;
-  border: none;
-  color: #000;
-}
-form .input-holder input:focus {
-  outline: none;
-}
-form .input-holder.submit {
-  background-color: #000;
-  border: none;
-  border-radius: 3px;
-  margin-top: 15px;
-  margin-bottom: 0;
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
 }
 
-form .upload-image .input-holder,
-form .upload-image .preview-img-holder {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #000;
-  border-radius: 50%;
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
   display: inline-block;
-  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
-  box-sizing: border-box;
-  vertical-align: middle;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
 }
-form .upload-image .input-holder:hover,
-form .upload-image .preview-img-holder:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
 }
-form .upload-image .input-holder .icon,
-form .upload-image .preview-img-holder .icon {
-  display: inline-block;
-  font-size: 30px;
-  color: #000;
-  margin-top: 25px;
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: "FontAwesome";
+  color: #757575;
 }
-.preview-img-upload .preview-img-holder {
-  width: 80px;
-  height: 80px;
-  display: none !important;
-  border: none !important;
+.avatar-upload .avatar-preview {
+  width: 5em;
+  height: 5em;
   position: relative;
-  margin-bottom: 14px;
+  border-radius: 100%;
+  border: 6px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
-.preview-img-upload .preview-img-holder .remove-image {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: red;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 11px;
-  padding: 5px 0;
-  box-sizing: border-box;
-}
-.preview-img-upload .preview-img-holder .img-holder {
+.avatar-upload .avatar-preview > div {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.preview-img-upload .preview-img-holder .img-holder img {
-  width: 100%;
-  min-height: 100%;
-}
-.preview-img-upload.active .preview-img-holder {
-  display: inline-block !important;
-}
-.preview-img-upload.active .input-holder {
-  display: none;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

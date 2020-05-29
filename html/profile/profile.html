@@ -20,16 +20,15 @@
 <script src="/js/signup/signup.js"></script>
 <script src="/js/signup/sign2.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="/js/imagePreview.js"></script>
 
   </head>
   <body>
-    <script>
+    <!-- <script>
       var ses = sessionStorage.getItem('FULLNAME');
       if (!ses){
         window.location.href = '/html/index.html';
       }
-    </script>
+    </script> -->
     <div id="container">
       <!-- NavBar -->
       <nav class="fixed-bottom">
@@ -72,9 +71,9 @@
             <a href="./index.html"> <i class=" fas fa-sign-out-alt fa-2x"></i></a> 
             </div>
           </div>
-          <div class="row" style="margin-bottom: -2em;">
-            <div class="col-4">
-              <div class="page-holder">
+          <div class="row" >
+            <div class="col-4" >
+              <!-- <div class="page-holder">
                 <form>
                   <div class="upload-image preview-img-upload">
                     <div class="preview-img-holder">
@@ -91,8 +90,20 @@
                     </label>
                   </div>
                 </form>
+              </div> -->
+              <div class="avatar-upload">
+                <div class="avatar-edit">
+                  <input type="file" id="imageUpload" 
+                  accept=".png, .jpg, .jpeg" />
+                  <label for="imageUpload" ></label>
+                </div>
+                <div class="avatar-preview">
+                  <div
+                    id="imagePreview"
+                    style="background-image: url(http://i.pravatar.cc/500?img=7);"
+                  ></div>
+                </div>
               </div>
-
           </div>
             <div class="col-8" style="margin-top: 1.5em;">
             <h5><script>document.write(sessionStorage.getItem("FULLNAME"));</script></h5>
@@ -206,6 +217,8 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"
       ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <script src="/js/signup/img.js"></script>
   </body>
 </html>
