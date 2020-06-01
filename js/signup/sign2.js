@@ -27,9 +27,6 @@ function validateForm() {
   if (bio == "") {
     bioP.innerHTML = "Bio must be filled out";
     return false;
-    // } else if (bioTest == -1) {
-    //   bioP.innerHTML = "Please enter letters only";
-    //   return false;
   } else {
     sessionStorage.setItem("BIO", bio);
   }
@@ -40,13 +37,7 @@ function validateForm() {
   } else {
     sessionStorage.setItem("SKILL", JSON.stringify(skillarr));
   }
-  // ['dlksad','lkasndkd','sakldaskd']
-  // 'd''a'sdsad,asdasdasd.asdasd'      lkasndkd 'l','k','
-  // } else {
-  //   // skillItem = document.getElementsByName("skillItem");
-  //   // sessionStorage.setItem("SKILL", skillItem);
 
-  // }
   if (college == "") {
     collegep.innerHTML = "College/University must be filled out";
     return false;
