@@ -80,6 +80,7 @@
 
           <div class="" >
 <h5>My credit card </h5>
+<form onsubmit="return validateForm()" method="" name='myForm' action="sign_up2.html" id="myForm">
 <div class="form-group">
   <input 
     type="password"
@@ -123,12 +124,13 @@
       placeholder="Zip/postal code"
     />
   </div>
+  </form>
   <div class="form-group col-6">  </div>
 </div>
 <div class="row">
   <div class="col-sm-6">
     <div class="input-group input-group-sm">
-      <input type="checkbox" name="" >
+      <input type="checkbox" name="check" class="check" >
       <label for="" class="checklabel">Remember this card</label>
 </div>
   </div>
@@ -137,19 +139,17 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="input-group input-group-sm">
-          <input   type="checkbox" name="" class="col-1.5">
+          <input   type="checkbox" name="check" class="col-1.5 check">
           <label for="" class="checklabel col-9" style="margin-left: -.5em;">In order to complete your transaction, we will transfer 
             you over to PayPal's secure servers.</label>
     </div>
       </div>
         </div>
-
-        
           </div>
           
           <div class="" style="margin-top: 1em;">
             <p class="col-10">By completing your purchase you agree to these Terms of Service.</p>
-          <button type="submit" class="col-10 btn lastcrd alppybtn activei" 
+          <button type="submit" class="col-12 btn lastcrd alppybtn activei" 
           onclick="window.location.href=('#');"
           >
           Enroll          

@@ -14,10 +14,7 @@ function validateForm() {
   var emailTest = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
   var passTest = /^[0-9a-zA-Z]+$/.test(password);
 
-  // var nameTest = fullName.search/);
-
   if (fullName == "") {
-    // alert("Name must be filled out");
     n.innerHTML = "Name must be filled out";
     return false;
   } else if (nameTest) {
@@ -28,14 +25,12 @@ function validateForm() {
   }
 
   if (email == "") {
-    // alert("Name must be filled out");
     e.innerHTML = "E-Mail must be filled out";
     return false;
   } else if (emailTest == -1) {
     e.innerHTML = "Please enter a valid email";
     return false;
   } else if (password == "") {
-    // alert("Name must be filled out");
     p.innerHTML = "Password must be filled out";
     return false;
   } else if (!passTest) {
