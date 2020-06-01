@@ -52,6 +52,6 @@ function validateForm() {
     checkerror.innerHTML = "Please accept terms of use";
     return false;
   } else {
-
     return true;
   }
+}
