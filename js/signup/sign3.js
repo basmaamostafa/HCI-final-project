@@ -1,8 +1,5 @@
 function validateForm() {
-  var edu = document.forms["myForm"]["edutxt"].value;
-  var eduP = document.getElementById("eduError");
-
-  var img = document.forms["myForm"]["file"].value;
+  var img = document.forms["myForm"]["img"].value;
   var imgp = document.getElementById("imgError");
 
   if (img == "") {
