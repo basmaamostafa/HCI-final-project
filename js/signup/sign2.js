@@ -40,9 +40,12 @@ function validateForm() {
   } else {
     sessionStorage.setItem("SKILL", JSON.stringify(skillarr));
   }
+  // ['dlksad','lkasndkd','sakldaskd']
+  // 'd''a'sdsad,asdasdasd.asdasd'      lkasndkd 'l','k','
   // } else {
   //   // skillItem = document.getElementsByName("skillItem");
   //   // sessionStorage.setItem("SKILL", skillItem);
+
   // }
   if (college == "") {
     collegep.innerHTML = "College/University must be filled out";
