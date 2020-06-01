@@ -1,5 +1,5 @@
 function validateFormsignin() {
-  var email = document.getElementsByName("mail").value;
+  var email = document.forms["myForm"]["mail"].value;
   var e = document.getElementById("mailError");
   var password = document.forms["myForm"]["pass"].value;
   var p = document.getElementById("passError");
@@ -10,7 +10,7 @@ function validateFormsignin() {
   if (email == "") {
     e.innerHTML = "E-Mail must be filled out";
     return false;
-  } else if (emailTest) {
+  } else if (emailTest == -1) {
     e.innerHTML = "Please enter a valid email";
     return false;
   } else if (email !== storedemail) {
@@ -20,11 +20,11 @@ function validateFormsignin() {
     return true;
   }
 
-  //   if (password == "") {
-  //     p.innerHTML = "Password must be filled out";
-  //     return false;
-  //   } else if (!passTest) {
-  //     p.innerHTML = "You can't enter symbol";
-  //     return false;
-  //   }
+  // if (password == "") {
+  //   p.innerHTML = "Password must be filled out";
+  //   return false;
+  // } else if (!passTest) {
+  //   p.innerHTML = "You can't enter symbol";
+  //   return false;
+  // }
 }

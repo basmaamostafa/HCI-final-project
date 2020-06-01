@@ -13,7 +13,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-<script src="/js/signup/signup.js"></script>
+<!-- <script src="/js/signup/signup.js"></script> -->
 <script src="/js/signup/signin.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
@@ -58,8 +58,7 @@
     </button>
       <!-- signin -->
       <div class="container-fluid">
-     <h2 class="title tits">Sign In</h2>
-          <form class="signform">
+     <h2 class="title tits">Sign In</h2><br>
             <button type="submit" class="btn btn-primary btn-lg btn-block" 
             formaction="https://accounts.google.com/AccountChooser?service=lso"
             >
@@ -72,28 +71,24 @@
                   <hr class="line col-5 w-100">                  
 
                 </div>
-              <form onsubmit="return validateFormsignin()" method="" name='myForm' action="/html/home/home.html" id="myForm">
-                <!-- <div class="form-group"> -->
-
-                <input
-                type="text"
-                class="form-control"
-                aria-describedby="emailHelp"
-                placeholder="Enter a valid email"
-                name="mail"
-              />
-              <p style="color: #ffd966; margin-left: 1em;" id="mailError"></p>
+                <form onsubmit="return validateFormsignin()" method="" name='myForm' action="/html/home/home.html" id="myForm">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter a valid email"
+                    name="mail"
+                  />
+                  <p style="color: #ffd966; margin-left: 1em;" id="mailError"></p>
+      
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter password"
+                    name="pass"
+                  />
+                  <p style="color: #ffd966; margin-left: 1em;" id="passError"></p>
             <!-- </div> -->
-            <div class="form-group">
-
-              <input
-              type="password"
-              class="form-control"
-              placeholder="Enter password"
-              name="pass"
-            />
-              <p style="color: #ffd966; margin-left: 1em;" id="passError"></p>
-            </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="input-group input-group-sm row">
@@ -102,8 +97,8 @@
             </div>
               </div>
                 </div>
-                <input type="submit" value="SignIn" class="btn btn-primary btn-lg btn-block">
-          </form>
+                <input type="submit" value="Next" class="btn btn-primary btn-lg btn-block">
+              </form>
 
             <div class="signq">
               <a class="optionin" href="./forgetpass.html"><p> Forgot your password?</p></a><br>
@@ -127,5 +122,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/signup/signin.js"></script>
   </body>
 </html>
