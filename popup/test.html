@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <title>Change image on select new image from file input</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <style>
+      #uploadPreview {
+        width: 7em;
+        height: 7em;
+        background-color: #000;
+        border: none;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img id="uploadPreview" />
+      <input
+        id="uploadImage"
+        type="file"
+        name="myPhoto"
+        onchange="PreviewImage();"
+      />
+    </div>
+    <script type="text/javascript">
+      function PreviewImage() {
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+        oFReader.onload = function (oFREvent) {
+          document.getElementById("uploadPreview").src = oFREvent.target.result;
+        };
+      }
+    </script>
+  </body>
+</html>
