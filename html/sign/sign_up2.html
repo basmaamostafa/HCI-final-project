@@ -90,7 +90,7 @@
             <a href="#" id="add" class="col-1"><i class="fas fa-plus"></i></a>
           </div>
           <p style="color: #ffd966; margin-left: 1em;" id="skillError"></p>
-          <div class="items"></div>
+          <div class="items" id="items"></div>
         </div>
         <script>
           skillarr = [];
@@ -110,7 +110,8 @@
               document.querySelector(".items").appendChild(span);
               document.querySelector("#input-add").value = "";
               times.onclick = function () {
-                this.parentElement.style.display = "none";
+                // this.parentElement.style.display = "none";
+                this.parentElement.remove();
               };
             }
           };
