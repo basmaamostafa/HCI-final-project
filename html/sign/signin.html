@@ -65,13 +65,15 @@
               Sign In with Google
             </button>
             <div class="row hrline input-group ">
-
-                  <hr class="line col-5 w-100">
+                <div class="row w-100" style="margin-left: 5%;">
+                  <hr class="line col-4 ">
                   <p class="">Or</p>
-                  <hr class="line col-5 w-100">                  
-
+                  <hr class="line col-4 ">                  
+                </div>
                 </div>
                 <form onsubmit="return validateFormsignin()" method="" name='myForm' action="/html/home/home.html" id="myForm">
+                  <p style="color: #ffd966; margin-left: 1em;" id="Error"></p>
+
                   <input
                     type="text"
                     class="form-control"
