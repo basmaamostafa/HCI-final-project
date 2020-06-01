@@ -27,10 +27,13 @@ function validateForm() {
   if (email == "") {
     e.innerHTML = "E-Mail must be filled out";
     return false;
-  } else if (emailTest == -1) {
+  } else if (emailTest) {
     e.innerHTML = "Please enter a valid email";
     return false;
-  } else if (password == "") {
+  } else {
+    sessionStorage.setItem("EMAIL", email);
+  }
+  if (password == "") {
     p.innerHTML = "Password must be filled out";
     return false;
   } else if (!passTest) {
@@ -42,7 +45,10 @@ function validateForm() {
   } else if (confirmPassword !== password) {
     cp.innerHTML = "Please enter a the same password";
     return false;
-  } else if (!termsofuse) {
+  } else {
+    sessionStorage.setItem("PASS", confirmPassword);
+  }
+  if (!termsofuse) {
     checkerror.innerHTML = "Please accept terms of use";
     return false;
   } else {
