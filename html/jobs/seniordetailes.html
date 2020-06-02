@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/stylesheet.css" />
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -130,11 +135,37 @@
             </div>
             <div class="row">
             <div class="col-8"></div>
-            <button type="submit" class="col-3 btn lastcrd alppybtn activei" 
-            onclick="window.location.href=('#');"
-            >
-            Apply          
-          </button></div>
+
+          <button type="button" class="col-3 btn lastcrd alppybtn activei" id="enroll" data-toggle="modal" data-target="#myModal"
+          >
+          Apply          
+        </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Thank you, <small><script>document.write(sessionStorage.getItem("FULLNAME"));</script></h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        Please check your email interview detailes.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="window.location.href=('./jobs.html');">Back to jobs</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+        </div>
             </div>
       </div>
     </div>

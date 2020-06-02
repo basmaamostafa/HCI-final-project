@@ -6,7 +6,6 @@ function validateForm() {
   var bioP = document.getElementById("bioError");
   // var bioTest = bio.search(/^[A-Za-z]+$/);
   var skill = document.getElementById("skillSpan");
-
   var skillP = document.getElementById("skillError");
   var college = document.forms["myForm"]["college"].value;
   var collegep = document.getElementById("collegeError");

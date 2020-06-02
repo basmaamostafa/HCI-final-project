@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/stylesheet.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/5.0.7/sweetalert2.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <link
       rel="stylesheet"
@@ -154,31 +154,41 @@
           
           <div class="" style="margin-top: 1em;">
             <p class="col-10">By completing your purchase you agree to these Terms of Service.</p>
-          <button type="submit" class="col-12 btn lastcrd alppybtn activei" id="enroll"
+          <button type="button" class="col-12 btn lastcrd alppybtn activei" id="enroll" data-toggle="modal" data-target="#myModal"
          
           >
           Enroll          
         </button>
-      <script type="text/javascript">
-      $("button").click(function () {
-        swal({
-          title: "Are you sure?",
-          text: "It will permanently deleted !",
-          type: "success",
-          icon: "#000",
-          confirmButtonColor: "#000",
-          confirmButtonText: "yes",
-          closeOnConfirm: false,
-        }).then(function (result) {
-          window.location = "/cources.html";
-        });
-      });</script>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Thank you, <small><script>document.write(sessionStorage.getItem("FULLNAME"));</script></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        Please check your email for the course link
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="window.location.href=('./courses.html');">Back to cources</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
       </div>
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/5.0.7/sweetalert2.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

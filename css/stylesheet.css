@@ -507,3 +507,12 @@ input[type="file"] {
 .Accordionbtn:hover {
   color: #ffd966 !important;
 }
+.fa-edit {
+  background-color: #ffd966;
+  padding: 0.7em;
+  border-radius: 50%;
+  border: #ffd966 solid 1px;
+  float: right;
+  margin-right: 0em;
+  margin-top: 7em;
+}

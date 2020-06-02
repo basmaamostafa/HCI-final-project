@@ -108,8 +108,8 @@
 
              <div class="avatar-upload">
               <div class="avatar-edit">
-                <input type="file" id="imageUpload" 
-                accept=".png, .jpg, .jpeg" />
+                <!-- <input type="file" id="imageUpload" 
+                accept=".png, .jpg, .jpeg" /> -->
                 <label for="imageUpload" ></label>
               </div>
               <div class="avatar-preview">
@@ -154,6 +154,9 @@
                       <li style="list-style-image: url(/img/calendar.png);"> <script>document.write(sessionStorage.getItem("BOD"));</script></li>
                       <li style="list-style-image: url(/img/collage.png);"> <script>document.write(sessionStorage.getItem("COLLEGE"));</script>
                       </ul>
+
+                      <i class="fas fa-edit fa-lg"  onclick="window.location.href=('./edit.html');"></i>
+
                     </div>
                     
                     <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
@@ -164,7 +167,9 @@
                           for (i = 0; i < arr.length; i++) {
                           document.write('<li><span class="fa-li"><i class="fas fa-laptop "></i></span>'+arr[i]+'</li>');}
                           </script>
-                      </ul>                   
+                      </ul>
+                      <i class="fas fa-edit fa-lg"  onclick="window.location.href=('./editskill.html');"></i>
+                   
                     </div>
 
                     <div class="tab-pane fade noti" id="nav-activity" role="tabpanel" aria-labelledby="nav-activity-tab">
@@ -206,12 +211,6 @@
           </section>
           
 
-
-
-  
-  
-         
-    
 
 
 
