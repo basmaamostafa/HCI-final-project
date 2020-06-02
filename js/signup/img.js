@@ -8,6 +8,11 @@ function readURL(input) {
       );
       $("#imagePreview").hide();
       $("#imagePreview").fadeIn(650);
+      var path = getBase64Image(e.target.result);
+      var url = path.toDataURL("image/png");
+      localStorage.setItem("IMG1", url);
+
+      return url.replace(/^data:image\/(png|jpg);base64,/, "");
     };
     reader.readAsDataURL(input.files[0]);
   }
