@@ -77,19 +77,21 @@
 
              <div class="avatar-upload">
               <div class="avatar-edit">
-                <!-- <input type="file" id="imageUpload" 
-                accept=".png, .jpg, .jpeg" /> -->
+                <input type="file" id="imageUpload" 
+                accept=".png, .jpg, .jpeg" />
                 <label for="imageUpload" ></label>
               </div>
               <div class="avatar-preview">
-                <div
-                  id="imagePreview"
-                  style="background-image: url(/img/student.png);">
-                  <script>document.write(sessionStorage.getItem("IMG"));</script>
+                <div id="imagePreview">
+                  <script>
+                     $("#imagePreview").css(
+                     "background-image",
+                      "url(" + sessionStorage.getItem('IMG1') + ")"
+                                  );
+                  </script>
                 </div>
               </div>
             </div>
-
           </div>
             <div class="col-8" style="margin-top: 1.5em;">
             <h5><script>document.write(sessionStorage.getItem("FULLNAME"));</script></h5>

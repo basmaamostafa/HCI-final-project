@@ -6,6 +6,6 @@ function validateForm() {
     imgp.innerHTML = "You must choose an image";
     return false;
   } else {
-    sessionStorage.setItem("IMG", img);
+    return true;
   }
 }

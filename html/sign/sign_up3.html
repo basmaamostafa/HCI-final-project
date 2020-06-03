@@ -57,10 +57,16 @@
             <div
               id="imagePreview"
               style="background-image: url(/img/student.png);"
-            ></div>
+            >
+              <script>
+                $("#imagePreview").css(
+                  "background-image",
+                  "url(" + sessionStorage.getItem("IMG1") + ")"
+                );
+              </script>
+            </div>
           </div>
         </div>
-        <p style="color: #ffd966; margin-left: 1em;" id="imgError"></p>
 
         <input
           style="margin-top: 35%;"
@@ -71,6 +77,10 @@
           onclick="session();"
         />
       </form>
+      <p
+        style="color: #ffd966; margin-left: 1em; text-align: center;"
+        id="imgError"
+      ></p>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
