@@ -134,7 +134,7 @@
                         <script>
                           var arr=JSON.parse(sessionStorage.getItem("SKILL"));
                           for (i = 0; i < arr.length; i++) {
-                          document.write('<li><span class="fa-li"><i class="fas fa-laptop "></i></span> '+arr[i]+' <i onclick="remove(this)" class="fas fa-trash" style="margin-left: 80%;"></i></li>');}
+                          document.write('<li><span class="fa-li"><i class="fas fa-laptop "></i></span> '+arr[i]+'</li>');}
                             //  
                             function remove(link) { 
                                 link.parentNode.parentNode.removeChild(link.parentNode);
@@ -142,8 +142,9 @@
                             }
                           </script>
                       </ul>
+                      <i class="fas fa-edit fa-lg float-right" style="margin-top: 1em;" onclick="window.location.href=('./editskills.html');"></i>
 
-                          <form class="add  row">
+                          <!-- <form class="add  row">
                           <input
                           style="margin-left: 1em;"
                             type="text"
@@ -154,7 +155,6 @@
                           />
                           <a href="#" id="add-button" class="col-1" style="margin-top: 1em;"><i class="fas fa-plus"></i></a>
                         </form>
- 
                         <script>
                           
                           var todoList = document.getElementById("todo-list");
@@ -172,13 +172,9 @@
                                 newItemInput.value = "";
                               }, 500);
                             }
-                            // sessionStorage.setItem("SKILL", JSON.stringify(skillarr));
-
                           };
                         </script>
-                   
-
-                   
+                    -->
                     </div>
 
                     <div class="tab-pane fade noti" id="nav-activity" role="tabpanel" aria-labelledby="nav-activity-tab">
