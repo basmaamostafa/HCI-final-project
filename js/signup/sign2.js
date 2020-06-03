@@ -34,7 +34,7 @@ function validateForm() {
     skillP.innerHTML = "Skill/Tolls must be filled out";
     return false;
   } else {
-    sessionStorage.setItem("SKILL", JSON.stringify(skillarr));
+    sessionStorage.setItem("SKILL", skillarr);
   }
 
   if (college == "") {
