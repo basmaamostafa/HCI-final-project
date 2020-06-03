@@ -74,10 +74,13 @@
             <script>
               var arr=JSON.parse(sessionStorage.getItem("SKILL"));
               for (i = 0; i < arr.length; i++) {
-              document.write('<li><span class="fa-li"><i class="fas fa-laptop "></i></span> '+arr[i]+' <i onclick="remove(this)" class="fas fa-trash" style="margin-left: 80%;"></i></li>');}
+              document.write('<li><span class="fa-li"><i class="fas fa-laptop "></i></span>'+arr[i]+' <i onclick="remove(this)" class="fas fa-trash" style="margin-left: 30%;"></i></li>');}
                 //  
                 function remove(link) { 
+
                     link.parentNode.parentNode.removeChild(link.parentNode);
+                    // sessionStorage.removeItem('SKILL');
+
                     // sessionStorage.clear("li");
                 }
               </script>
@@ -115,7 +118,6 @@
             document.querySelector(".items").appendChild(span);
             document.querySelector("#input-add").value = "";
             times.onclick = function () {
-              // this.parentElement.style.display = "none";
               this.parentElement.remove();
             };
           }
