@@ -23,12 +23,12 @@
 
   </head>
   <body>
-    <!-- <script>
+    <script>
       var ses = sessionStorage.getItem('FULLNAME');
       if (!ses){
         window.location.href = '/html/index.html';
       }
-    </script> -->
+    </script>
     <div id="container">
       <!-- NavBar -->
       <nav class="fixed-bottom">
@@ -73,38 +73,7 @@
           </div>
           <div class="row" >
             <div class="col-4" >
-              <!-- <div class="page-holder">
-                <form>
-                  <div class="upload-image preview-img-upload">
-                    <div class="preview-img-holder">
-                      <span class="remove-image fa fa-times"></span>
-                      <div class="img-holder">
-                        <img class="preview-img"  src="" alt="image" draggable="false" />
-                      </div>
-                    </div>
-                    <label class="input-holder"
-                      >
-                      <i class="icon fas fa-cloud-upload-alt"></i>
 
-                      <input class="hide" type="file" accept="image/*" />
-                    </label>
-                  </div>
-                </form>
-              </div> -->
-              
-              <!-- <div class="avatar-upload">
-                <div class="avatar-edit">
-                  <input type="file" id="imageUpload" 
-                  accept=".png, .jpg, .jpeg" />
-                  <label for="imageUpload" ></label>
-                </div>
-                <div class="avatar-preview">
-                  <div
-                    id="imagePreview"
-                    style="background-image: url(/img/student.png);"
-                  ></div>
-                </div>
-              </div> -->
 
              <div class="avatar-upload">
               <div class="avatar-edit">
@@ -116,8 +85,8 @@
                 <div
                   id="imagePreview"
                   style="background-image: url(/img/student.png);">
-                <script>document.write(sessionStorage.getItem("IMG"));</script>
-              </div>
+                  <script>document.write(sessionStorage.getItem("IMG"));</script>
+                </div>
               </div>
             </div>
 
@@ -155,7 +124,7 @@
                       <li style="list-style-image: url(/img/collage.png);"> <script>document.write(sessionStorage.getItem("COLLEGE"));</script>
                       </ul>
 
-                      <i class="fas fa-edit fa-lg"  onclick="window.location.href=('./edit.html');"></i>
+                      <i class="fas fa-edit fa-lg float-right"  onclick="window.location.href=('./edit.html');"></i>
 
                     </div>
                     
