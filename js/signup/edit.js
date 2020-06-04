@@ -1,5 +1,4 @@
 function validateForm() {
-  // var f = document.forms["myForm"];
   var fullName = document.forms["myForm"]["fname"].value;
   var n = document.getElementById("nameError");
   var nameTest = fullName.search(/^[a-zA-Z ]+$/);
