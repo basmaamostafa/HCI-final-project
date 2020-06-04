@@ -46,27 +46,7 @@
           placeholder="Write your Education level "
           name="edutxt"
         />
-        <!-- <div class="dropdown">
-          <input
-            class="dropdown-toggle form-control"
-            type="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            type="text"
-            name="edutxt"
-            value="Education level"
-            style="text-align: left;"
-          >
-            
-          </input>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Undergraduate student</a>
-            <a class="dropdown-item" href="#">Freshdergraduate student</a>
-            <a class="dropdown-item" href="#">Master’s degree</a>
-            <a class="dropdown-item" href="#">Doctorate degree</a>
-          </div>
-        </div> -->
+
         <p style="color: #ffd966; margin-left: 1em;" id="eduError"></p>
 
         <input
@@ -95,7 +75,6 @@
         <script>
           skillarr = [];
           document.querySelector("#add").onclick = function () {
-            "use strict";
             if (document.querySelector("#input-add").value === "") {
               document.querySelector("#input-add").onclick = function () {};
             } else {

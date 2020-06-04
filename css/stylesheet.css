@@ -517,3 +517,6 @@ input[type="file"] {
   bottom: 0em !important;
   /* float: right !important; */
 }
+.fa-edit:hover {
+  color: #000 !important;
+}

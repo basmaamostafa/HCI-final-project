@@ -4,7 +4,6 @@ function validateForm() {
   var eduTest = edu.search(/^[a-zA-Z ]+$/);
   var bio = document.forms["myForm"]["biotxt"].value;
   var bioP = document.getElementById("bioError");
-  // var bioTest = bio.search(/^[A-Za-z]+$/);
   var skill = document.getElementById("skillSpan");
   var skillP = document.getElementById("skillError");
   var college = document.forms["myForm"]["college"].value;
@@ -30,7 +29,7 @@ function validateForm() {
     sessionStorage.setItem("BIO", bio);
   }
 
-  if (!skill) {
+  if (skill == "") {
     skillP.innerHTML = "Skill/Tolls must be filled out";
     return false;
   } else {
@@ -47,7 +46,7 @@ function validateForm() {
     sessionStorage.setItem("COLLEGE", college);
   }
 
-  if (!date) {
+  if (date == "") {
     datep.innerHTML = "Birthday date must be filled out";
     return false;
   } else {

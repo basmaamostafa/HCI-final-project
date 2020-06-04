@@ -85,15 +85,15 @@
                 <div id="imagePreview">
                   <script>
                       var ses = sessionStorage.getItem("IMG1");
-                if (!ses) {
+                if (ses) {
                   $("#imagePreview").css(
                     "background-image",
-                    "url(/img/student.png)"
+                    "url(" + ses + ")"
                   );
                 } else {
                   $("#imagePreview").css(
                     "background-image",
-                    "url(" + ses + ")"
+                    "url(/img/student.png)"
                   );
                 }
                   </script>

@@ -71,10 +71,12 @@
         <form style="margin-top: 8em;" onsubmit="return validateForm()" method="" name='myForm' action="/html/profile/profile.html" id="myForm">
 
           <ul class="fa-ul list-group list-group-flush " id="todo-list">
+            <p style="color: #ffd966; margin-left: 1em;" > All skills will be deleted </p>
+
             <script>
               var arr=JSON.parse(sessionStorage.getItem("SKILL"));
               for (i = 0; i < arr.length; i++) {
-              document.write('<li><span class="fa-li"><i class="fas fa-laptop "></i></span>'+arr[i]+' <i onclick="remove(this)" class="fas fa-trash" style="margin-left: 30%;"></i></li>');}
+              document.write('<li><span class="fa-li"><i class="fas fa-laptop "></i></span>'+arr[i]+' <i onclick="remove(this)" class="fas fa-trash float-right " style="margin-right: 10%;"></i></li>');}
                 //  
                 function remove(link) { 
 
@@ -84,6 +86,7 @@
                     // sessionStorage.clear("li");
                 }
               </script>
+
           </ul>
 
       <div class="place" style="margin-top: 2em;">
@@ -103,7 +106,6 @@
       <script>
         skillarr = [];
         document.querySelector("#add").onclick = function () {
-          "use strict";
           if (document.querySelector("#input-add").value === "") {
             document.querySelector("#input-add").onclick = function () {};
           } else {

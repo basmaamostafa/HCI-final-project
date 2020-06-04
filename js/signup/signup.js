@@ -48,7 +48,7 @@ function validateForm() {
   } else {
     sessionStorage.setItem("PASS", confirmPassword);
   }
-  if (!termsofuse) {
+  if (termsofuse == "") {
     checkerror.innerHTML = "Please accept terms of use";
     return false;
   } else {
