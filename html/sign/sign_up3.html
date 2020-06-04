@@ -54,15 +54,21 @@
             <label for="imageUpload"></label>
           </div>
           <div class="avatar-preview">
-            <div
-              id="imagePreview"
-              style="background-image: url(/img/student.png);"
-            >
+            <div id="imagePreview">
+              <!-- style="background-image: url(/img/student.png);" -->
               <script>
-                $("#imagePreview").css(
-                  "background-image",
-                  "url(" + sessionStorage.getItem("IMG1") + ")"
-                );
+                var ses = sessionStorage.getItem("IMG1");
+                if (!ses) {
+                  $("#imagePreview").css(
+                    "background-image",
+                    "url(/img/student.png)"
+                  );
+                } else {
+                  $("#imagePreview").css(
+                    "background-image",
+                    "url(" + ses + ")"
+                  );
+                }
               </script>
             </div>
           </div>
