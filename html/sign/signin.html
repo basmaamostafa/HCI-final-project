@@ -28,16 +28,47 @@
       <i class="fas fa-chevron-left fa-lg"></i>
     </button>
       <!-- signin -->
-      <script>
+      <!-- <script>
         function google(){
           window.location.href=("https://accounts.google.com/AccountChooser?service=lso");
-        }
+        } -->
       </script>
       <div class="container-fluid">
      <h2 class="title tits">Sign In</h2><br>
-            <button type="submit" onclick="google()" class="btn btn-primary btn-lg btn-block">
-              Sign In with Google
-            </button>
+
+            
+      <button type="button" class="btn btn-primary btn-lg btn-block" 
+      id="enroll" data-toggle="modal" data-target="#myModal"
+      >
+      Sign In with Google
+    </button>
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+<div class="modal-dialog">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Soon </h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    
+    <!-- Modal body -->
+    <div class="modal-body">
+    please sign in with your email
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="window.location.href=('./signin.html');">Sign In</button>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
             <div class="row hrline input-group ">
                 <div class="row w-100" style="margin-left: 5%;">
                   <hr class="line col-4 ">
@@ -73,7 +104,7 @@
             </div>
               </div>
                 </div>
-                <input type="submit" value="Next" class="btn btn-primary btn-lg btn-block">
+                <input type="submit" value="Sign In" class="btn btn-primary btn-lg btn-block">
               </form>
 
             <div class="signq">
