@@ -20,9 +20,6 @@ function validateFormsignin() {
     error.innerHTML = "Please enter correct email or password";
     return false;
   }
-  // else {
-  //   return true;
-  // }
 
   if (password == "") {
     p.innerHTML = "Password must be filled out";

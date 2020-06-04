@@ -19,36 +19,7 @@
   </head>
   <body>
     <div id="container">
-      <!-- NavBar -->
-      <!-- <nav class="fixed-bottom">
-        <ul class="nav nav-pills nav-fill">
-          <li class="nav-item">
-            <a class="nav-link " href="./home.html">
-              <i class="fas fa-home fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-briefcase fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fab fa-microblog fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="far fa-bell fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-user fa-2x"></i>
-            </a>
-          </li>
-        </ul>
-      </nav> -->
+
       <button class="backbtn fixed-top"       
       action="action"
       onclick="window.history.go(-1); return false;"
@@ -57,11 +28,14 @@
       <i class="fas fa-chevron-left fa-lg"></i>
     </button>
       <!-- signin -->
+      <script>
+        function google(){
+          window.location.href=("https://accounts.google.com/AccountChooser?service=lso");
+        }
+      </script>
       <div class="container-fluid">
      <h2 class="title tits">Sign In</h2><br>
-            <button type="submit" class="btn btn-primary btn-lg btn-block" 
-            formaction="https://accounts.google.com/AccountChooser?service=lso"
-            >
+            <button type="submit" onclick="google()" class="btn btn-primary btn-lg btn-block">
               Sign In with Google
             </button>
             <div class="row hrline input-group ">

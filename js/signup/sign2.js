@@ -29,8 +29,8 @@ function validateForm() {
     sessionStorage.setItem("BIO", bio);
   }
 
-  if (skill == "") {
-    skillP.innerHTML = "Skill/Tolls must be filled out";
+  if (!skill) {
+    skillP.innerHTML = "Skill/Tools must be filled out";
     return false;
   } else {
     sessionStorage.setItem("SKILL", JSON.stringify(skillarr));

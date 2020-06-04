@@ -1,5 +1,4 @@
 function validateForm() {
-  // var f = document.forms["myForm"];
   var fullName = document.forms["myForm"]["fname"].value;
   var n = document.getElementById("nameError");
   var email = document.forms["myForm"]["mail"].value;
