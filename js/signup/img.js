@@ -13,7 +13,7 @@ function readURL(input) {
       // var url = path.toDataURL("image/png");
       sessionStorage.setItem("IMG1", path);
 
-      return url.replace(/^data:image\/(png|jpg);base64,/, "");
+      // return url.replace(/^data:image\/(png|jpg);base64,/, "");
     };
     reader.readAsDataURL(input.files[0]);
   }
